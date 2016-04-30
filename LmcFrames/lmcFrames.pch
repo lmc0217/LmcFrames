@@ -1,0 +1,66 @@
+//
+//  lmcFrames.pch
+//  LmcFrames
+//
+//  Created by Mr.Chao on 16/1/20.
+//  Copyright © 2016年 lmc. All rights reserved.
+//
+
+#ifndef lmcFrames_pch
+#define lmcFrames_pch
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import "SystemTool.h"
+
+#endif
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+//设置NSLog在发布版时不打印宏定义
+#ifdef DEBUG
+#define NSLog(...) NSLog(__VA_ARGS__)
+#define debugMethod() NSLog(@"%s", __func__)
+#else
+#define NSLog(...)
+#define debugMethod()
+#endif
+//以5s为基准适配
+CG_INLINE double layout()
+{
+    BOOL is_iphone_6 =  (fabs((double)[[ UIScreen mainScreen ] bounds ].size.height - ( double )667 )== 0);
+    
+    BOOL is_iphone_6p =  (fabs((double)[[ UIScreen mainScreen ] bounds ].size.height - ( double )736 )== 0);
+    
+    double dlayout=1.0;
+    
+    if(is_iphone_6)
+    {
+        dlayout=(double)375/320;
+    }
+    else if(is_iphone_6p)
+    {
+        dlayout=(double)414/320;
+    }
+    else
+    {
+        
+    }
+    return dlayout;
+}
+
+CG_INLINE void refreshMySubViews(UIView *father)
+{
+    for (UIView *subview in father.subviews)
+    {
+        float x=CGRectGetMinX(subview.frame);
+        float y=CGRectGetMinY(subview.frame);
+        float width=CGRectGetWidth(subview.frame);
+        float height=CGRectGetHeight(subview.frame);
+        
+        subview.frame=CGRectMake(x*layout(), y*layout(), width*layout(), height*layout());
+    }
+}
+
+
+#endif /* lmcFrames_pch */
