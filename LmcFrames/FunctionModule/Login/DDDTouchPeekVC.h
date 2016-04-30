@@ -2,14 +2,13 @@
 //  DDDTouchPeekVC.h
 //  LmcFrames
 //
-//  Created by Mr.Chao on 16/3/10.
+//  Created by yespowering on 16/4/30.
 //  Copyright © 2016年 lmc. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "McBaseViewController.h"
 
-@interface DDDTouchPeekVC : UIViewController
-
+@interface DDDTouchPeekVC : McBaseViewController
 @property (nonatomic,retain) NSString *imageURL;
 
 - (id)initWithImageURL:(NSString *)imageURL;

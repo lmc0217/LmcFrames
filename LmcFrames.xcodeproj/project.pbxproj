@@ -48,8 +48,9 @@
 		A0DE49AB1C4E284E006FD35A /* LmcBlokenLine.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DE49AA1C4E284E006FD35A /* LmcBlokenLine.m */; };
 		A0EFE7E51C91441C0025D7A1 /* shareIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A0EFE7E31C91441C0025D7A1 /* shareIcon@2x.png */; };
 		A0EFE7E61C91441C0025D7A1 /* shareIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A0EFE7E41C91441C0025D7A1 /* shareIcon@3x.png */; };
-		A0EFE7E91C9149A40025D7A1 /* DDDTouchPeekVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EFE7E81C9149A40025D7A1 /* DDDTouchPeekVC.m */; };
-		A0F1D9611C8D684F000BD7AA /* DDDTouchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F1D9601C8D684F000BD7AA /* DDDTouchVC.m */; };
+		A3A56DD41CD47D3100CEE361 /* McBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A56DD31CD47D3100CEE361 /* McBaseViewController.m */; };
+		A3A56DD71CD47DDD00CEE361 /* DDDTouchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A56DD61CD47DDD00CEE361 /* DDDTouchVC.m */; };
+		A3A56DDA1CD47E2300CEE361 /* DDDTouchPeekVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A56DD91CD47E2300CEE361 /* DDDTouchPeekVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -124,11 +125,13 @@
 		A0DE49AA1C4E284E006FD35A /* LmcBlokenLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LmcBlokenLine.m; sourceTree = "<group>"; };
 		A0EFE7E31C91441C0025D7A1 /* shareIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shareIcon@2x.png"; sourceTree = "<group>"; };
 		A0EFE7E41C91441C0025D7A1 /* shareIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shareIcon@3x.png"; sourceTree = "<group>"; };
-		A0EFE7E71C9149A40025D7A1 /* DDDTouchPeekVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDDTouchPeekVC.h; sourceTree = "<group>"; };
-		A0EFE7E81C9149A40025D7A1 /* DDDTouchPeekVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDDTouchPeekVC.m; sourceTree = "<group>"; };
-		A0F1D95F1C8D684F000BD7AA /* DDDTouchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDDTouchVC.h; sourceTree = "<group>"; };
-		A0F1D9601C8D684F000BD7AA /* DDDTouchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDDTouchVC.m; sourceTree = "<group>"; };
 		A0F5C0AA1C4F30190072FF9B /* lmcFrames.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lmcFrames.pch; sourceTree = "<group>"; };
+		A3A56DD21CD47D3100CEE361 /* McBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = McBaseViewController.h; sourceTree = "<group>"; };
+		A3A56DD31CD47D3100CEE361 /* McBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = McBaseViewController.m; sourceTree = "<group>"; };
+		A3A56DD51CD47DDD00CEE361 /* DDDTouchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDDTouchVC.h; sourceTree = "<group>"; };
+		A3A56DD61CD47DDD00CEE361 /* DDDTouchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDDTouchVC.m; sourceTree = "<group>"; };
+		A3A56DD81CD47E2300CEE361 /* DDDTouchPeekVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDDTouchPeekVC.h; sourceTree = "<group>"; };
+		A3A56DD91CD47E2300CEE361 /* DDDTouchPeekVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDDTouchPeekVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -345,10 +348,10 @@
 		A088DE801BFEBB40001DBDE3 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				A0F1D95F1C8D684F000BD7AA /* DDDTouchVC.h */,
-				A0F1D9601C8D684F000BD7AA /* DDDTouchVC.m */,
-				A0EFE7E71C9149A40025D7A1 /* DDDTouchPeekVC.h */,
-				A0EFE7E81C9149A40025D7A1 /* DDDTouchPeekVC.m */,
+				A3A56DD51CD47DDD00CEE361 /* DDDTouchVC.h */,
+				A3A56DD61CD47DDD00CEE361 /* DDDTouchVC.m */,
+				A3A56DD81CD47E2300CEE361 /* DDDTouchPeekVC.h */,
+				A3A56DD91CD47E2300CEE361 /* DDDTouchPeekVC.m */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -356,6 +359,8 @@
 		A0B7C8C21C27FAE7005357FD /* CustomControls */ = {
 			isa = PBXGroup;
 			children = (
+				A3A56DD21CD47D3100CEE361 /* McBaseViewController.h */,
+				A3A56DD31CD47D3100CEE361 /* McBaseViewController.m */,
 				A089368D1C28E38500852F88 /* McClickImageView.h */,
 				A089368E1C28E38500852F88 /* McClickImageView.m */,
 				A01FA9881C965A8C00581A7A /* McUINavigationController.h */,
@@ -473,6 +478,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3A56DDA1CD47E2300CEE361 /* DDDTouchPeekVC.m in Sources */,
 				7353C7711BF9D2E30033170E /* ViewController.m in Sources */,
 				A00734C51C2A8498001FD675 /* UIView+BinExtension.m in Sources */,
 				A00734BE1C2A830D001FD675 /* BinArrowButton.m in Sources */,
@@ -481,10 +487,9 @@
 				A0DE49AB1C4E284E006FD35A /* LmcBlokenLine.m in Sources */,
 				7353C76E1BF9D2E30033170E /* LmcAppDelegate.m in Sources */,
 				A01FA98A1C965A8C00581A7A /* McUINavigationController.m in Sources */,
-				A0EFE7E91C9149A40025D7A1 /* DDDTouchPeekVC.m in Sources */,
-				A0F1D9611C8D684F000BD7AA /* DDDTouchVC.m in Sources */,
 				A08224281C5F08880053E063 /* RollingView.m in Sources */,
 				A0DE49A21C4DD4E2006FD35A /* pageTwo.m in Sources */,
+				A3A56DD71CD47DDD00CEE361 /* DDDTouchVC.m in Sources */,
 				A088DE6C1BFEABFF001DBDE3 /* RootObject.m in Sources */,
 				A089368F1C28E38500852F88 /* McClickImageView.m in Sources */,
 				A0DE499F1C4DD4C6006FD35A /* pageOne.m in Sources */,
@@ -500,6 +505,7 @@
 				7353C76B1BF9D2E30033170E /* main.m in Sources */,
 				A0C177B01C04338900C7F5C5 /* ClickedListView.m in Sources */,
 				A0131A211C96546C0099C11C /* UIColor+Hex.m in Sources */,
+				A3A56DD41CD47D3100CEE361 /* McBaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

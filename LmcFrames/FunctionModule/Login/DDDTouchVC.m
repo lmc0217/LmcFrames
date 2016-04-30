@@ -2,7 +2,7 @@
 //  DDDTouchVC.m
 //  LmcFrames
 //
-//  Created by Mr.Chao on 16/3/7.
+//  Created by yespowering on 16/4/30.
 //  Copyright © 2016年 lmc. All rights reserved.
 //
 
@@ -45,7 +45,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
-    self.title = @"3D Touch - 刘梦超";
+    [self setCustomTitle:@"3D Touch - 刘梦超"];
     
     UIButton *back = [UIButton buttonWithType:UIButtonTypeCustom];
     back.frame = CGRectMake(0, 0, 40, 25);
@@ -61,7 +61,7 @@
     //检测是否支持3D Touch...
     if (self.traitCollection.forceTouchCapability == UIForceTouchCapabilityAvailable) {
         //支持
-//        [self registerForPreviewingWithDelegate:self sourceView:self.view];
+        //        [self registerForPreviewingWithDelegate:self sourceView:self.view];
     }
     else
     {
@@ -140,7 +140,7 @@
 {
     viewControllerToCommit.hidesBottomBarWhenPushed = YES;
     [self showViewController:viewControllerToCommit sender:self];
-//    [self.navigationController pushViewController:viewControllerToCommit animated:NO];
+    //    [self.navigationController pushViewController:viewControllerToCommit animated:NO];
 }
 
 
@@ -154,10 +154,10 @@
     //坐标点的转化，
     CGPoint tableLocation = [self.view convertPoint:location toView:self.tableView];
     _selectedPath = [self.tableView indexPathForRowAtPoint:tableLocation];
-//    // 根据手指按压的区域，结合 tableView 的 Y 偏移量（上下）
-//    location.y = _tableView.contentOffset.y+location.y;
-//    //定位到当前，按压的区域处于哪个 cell  获得 cell 的indexPath
-//    _selectedPath = [_tableView indexPathForRowAtPoint:location];
+    //    // 根据手指按压的区域，结合 tableView 的 Y 偏移量（上下）
+    //    location.y = _tableView.contentOffset.y+location.y;
+    //    //定位到当前，按压的区域处于哪个 cell  获得 cell 的indexPath
+    //    _selectedPath = [_tableView indexPathForRowAtPoint:location];
     // 根据cell 的indexPath 取出 cell
     UITableViewCell * cell = [_tableView cellForRowAtIndexPath:_selectedPath];
     //    cell.backgroundColor = [UIColor redColor];

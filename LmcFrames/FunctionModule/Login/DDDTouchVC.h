@@ -2,12 +2,12 @@
 //  DDDTouchVC.h
 //  LmcFrames
 //
-//  Created by Mr.Chao on 16/3/7.
+//  Created by yespowering on 16/4/30.
 //  Copyright © 2016年 lmc. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "McBaseViewController.h"
 
-@interface DDDTouchVC : UIViewController
+@interface DDDTouchVC : McBaseViewController
 
 @end

@@ -2,7 +2,7 @@
 //  DDDTouchPeekVC.m
 //  LmcFrames
 //
-//  Created by Mr.Chao on 16/3/10.
+//  Created by yespowering on 16/4/30.
 //  Copyright © 2016年 lmc. All rights reserved.
 //
 
@@ -42,11 +42,11 @@
     UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithCustomView:back];
     [self.navigationItem setLeftBarButtonItem:leftItem animated:YES];
     
-    self.title = @"3D Touch PeekVC";
+    [self setCustomTitle:@"3D Touch PeekVC"];
     
     _potoView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame)-64)];
     [self.view addSubview:_potoView];
-
+    
     [self initData];
 }
 
@@ -83,7 +83,7 @@
         [request setValue:self.etag forHTTPHeaderField:@"IF-None-Match"];
     }
     
-
+    
     NSURLSessionDataTask *task = [[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         
         NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
@@ -176,4 +176,5 @@
 {
     return UIInterfaceOrientationPortrait;
 }
+
 @end
