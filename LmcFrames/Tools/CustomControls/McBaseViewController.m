@@ -1,6 +1,6 @@
 //
 //  McBaseViewController.m
-//  YPowering
+//  LmcFrames
 //
 //  Created by Mr.chao on 16/4/21.
 //  Copyright © 2016年 lmc. All rights reserved.
