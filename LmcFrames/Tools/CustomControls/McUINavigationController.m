@@ -45,22 +45,22 @@
     //设置代理为nil之后即便自定义了leftBarButtonItem也可以右滑pop。
     
     __weak McUINavigationController *weakSelf = self;
-//    if ([weakSelf respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
+    if ([weakSelf respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
         //do somthing ...
         self.interactivePopGestureRecognizer.delegate = (id)weakSelf;
-    self.delegate = (id)weakSelf;
-//    }
+        self.delegate = (id)weakSelf;
+    }
 }
 
 
-// Hijack the push method to disable the gesture
+//set the push method to disable the gesture
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
-//    if ([self respondsToSelector:@selector(interactivePopGestureRecognizer)])
-//    {
+    if ([self respondsToSelector:@selector(interactivePopGestureRecognizer)])
+    {
         self.interactivePopGestureRecognizer.enabled = NO;
-//    }
-    
+    }
+
     [super pushViewController:viewController animated:animated];
 }
 
@@ -71,7 +71,6 @@
                     animated:(BOOL)animate
 {
     // Enable the gesture again once the new controller is shown
-    
     if ([self respondsToSelector:@selector(interactivePopGestureRecognizer)])
     {
         self.interactivePopGestureRecognizer.enabled = YES;
