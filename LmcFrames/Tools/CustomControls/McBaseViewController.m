@@ -138,13 +138,15 @@
 }
 
 
-//禁止旋转手机屏幕
+#pragma mark - 禁止屏幕旋转
+- (BOOL)shouldAutorotate {
+    return NO;
+}
+
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
     return NO;
 }
 
-- (BOOL)shouldAutorotate {
-    return NO;
-}
+
 
 @end

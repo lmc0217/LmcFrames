@@ -226,4 +226,15 @@
     }
 }
 #endif
+
+#pragma mark - 屏幕旋转
+- (BOOL)shouldAutorotate
+{
+    return YES;
+}
+
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations
+{
+    return (UIInterfaceOrientationMaskPortrait);
+}
 @end

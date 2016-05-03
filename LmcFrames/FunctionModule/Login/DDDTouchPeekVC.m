@@ -64,6 +64,10 @@
         // the view has been removed from the navigation stack, back is probably the cause
         // this will be slow with a large stack however.
         NSLog(@"右滑手势返回");
+        if ([[UIDevice currentDevice] respondsToSelector:@selector(setOrientation:)]) {
+//            [[UIDevice currentDevice] performSelector:@selector(setOrientation:) withObject:[NSNumber numberWithInteger:UIInterfaceOrientationPortrait]];
+            
+        }
     }
 }
 - (void)backButtonClicked
@@ -162,6 +166,7 @@
 }
 
 
+#pragma mark - 屏幕旋转
 - (BOOL)shouldAutorotate
 {
     return YES;
@@ -169,12 +174,12 @@
 
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations
 {
-    return UIInterfaceOrientationMaskAll;
+    return (UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskLandscapeRight);
 }
 
-- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
-{
-    return UIInterfaceOrientationPortrait;
-}
+//- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
+//{
+//    return UIInterfaceOrientationPortrait;
+//}
 
 @end
