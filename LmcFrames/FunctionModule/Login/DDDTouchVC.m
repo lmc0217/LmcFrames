@@ -131,7 +131,7 @@
     NSString *imageURL = [[[_arrData objectAtIndex:indexPath.row] allValues] objectAtIndex:0];
     DDDTouchPeekVC *peekVC = [[DDDTouchPeekVC alloc] initWithImageURL:imageURL];
     peekVC.view.backgroundColor = [UIColor greenColor];
-    NSLog(@"%@",location);
+//    NSLog(@"%@",location);
     return peekVC;
 #endif
 }
