@@ -66,7 +66,7 @@
     else
     {
         //不支持
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"您的手机不支持3D Touch..." message:nil delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"你的手机不支持3D Touch..." message:nil delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
         [alert show];
     }
 }
