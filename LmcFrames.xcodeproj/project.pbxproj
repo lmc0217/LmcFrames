@@ -48,6 +48,9 @@
 		A0DE49AB1C4E284E006FD35A /* LmcBlokenLine.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DE49AA1C4E284E006FD35A /* LmcBlokenLine.m */; };
 		A0EFE7E51C91441C0025D7A1 /* shareIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A0EFE7E31C91441C0025D7A1 /* shareIcon@2x.png */; };
 		A0EFE7E61C91441C0025D7A1 /* shareIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A0EFE7E41C91441C0025D7A1 /* shareIcon@3x.png */; };
+		A30D84551CE1DE9D00280F90 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A30D84521CE1DE9D00280F90 /* MBProgressHUD.bundle */; };
+		A30D84561CE1DE9D00280F90 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A30D84541CE1DE9D00280F90 /* MBProgressHUD.m */; };
+		A30D845A1CE1DF6700280F90 /* MBProgressHUD+MC.m in Sources */ = {isa = PBXBuildFile; fileRef = A30D84591CE1DF6700280F90 /* MBProgressHUD+MC.m */; };
 		A3A56DD41CD47D3100CEE361 /* McBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A56DD31CD47D3100CEE361 /* McBaseViewController.m */; };
 		A3A56DD71CD47DDD00CEE361 /* DDDTouchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A56DD61CD47DDD00CEE361 /* DDDTouchVC.m */; };
 		A3A56DDA1CD47E2300CEE361 /* DDDTouchPeekVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A56DD91CD47E2300CEE361 /* DDDTouchPeekVC.m */; };
@@ -126,6 +129,11 @@
 		A0EFE7E31C91441C0025D7A1 /* shareIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shareIcon@2x.png"; sourceTree = "<group>"; };
 		A0EFE7E41C91441C0025D7A1 /* shareIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shareIcon@3x.png"; sourceTree = "<group>"; };
 		A0F5C0AA1C4F30190072FF9B /* lmcFrames.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lmcFrames.pch; sourceTree = "<group>"; };
+		A30D84521CE1DE9D00280F90 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		A30D84531CE1DE9D00280F90 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		A30D84541CE1DE9D00280F90 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		A30D84581CE1DF6700280F90 /* MBProgressHUD+MC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MC.h"; sourceTree = "<group>"; };
+		A30D84591CE1DF6700280F90 /* MBProgressHUD+MC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MC.m"; sourceTree = "<group>"; };
 		A3A56DD21CD47D3100CEE361 /* McBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = McBaseViewController.h; sourceTree = "<group>"; };
 		A3A56DD31CD47D3100CEE361 /* McBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = McBaseViewController.m; sourceTree = "<group>"; };
 		A3A56DD51CD47DDD00CEE361 /* DDDTouchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDDTouchVC.h; sourceTree = "<group>"; };
@@ -302,6 +310,7 @@
 		A088DE7A1BFEB780001DBDE3 /* ThirdLib */ = {
 			isa = PBXGroup;
 			children = (
+				A30D84511CE1DE9D00280F90 /* MBProgressHUD */,
 			);
 			path = ThirdLib;
 			sourceTree = "<group>";
@@ -396,6 +405,18 @@
 			path = pageView;
 			sourceTree = "<group>";
 		};
+		A30D84511CE1DE9D00280F90 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				A30D84521CE1DE9D00280F90 /* MBProgressHUD.bundle */,
+				A30D84531CE1DE9D00280F90 /* MBProgressHUD.h */,
+				A30D84541CE1DE9D00280F90 /* MBProgressHUD.m */,
+				A30D84581CE1DF6700280F90 /* MBProgressHUD+MC.h */,
+				A30D84591CE1DF6700280F90 /* MBProgressHUD+MC.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -468,6 +489,7 @@
 				A08936931C28F7BE00852F88 /* Default-568h@2x.png in Resources */,
 				A08936951C28F7BE00852F88 /* Default@2x.png in Resources */,
 				7353C7761BF9D2E30033170E /* Images.xcassets in Resources */,
+				A30D84551CE1DE9D00280F90 /* MBProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,6 +501,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3A56DDA1CD47E2300CEE361 /* DDDTouchPeekVC.m in Sources */,
+				A30D845A1CE1DF6700280F90 /* MBProgressHUD+MC.m in Sources */,
 				7353C7711BF9D2E30033170E /* ViewController.m in Sources */,
 				A00734C51C2A8498001FD675 /* UIView+BinExtension.m in Sources */,
 				A00734BE1C2A830D001FD675 /* BinArrowButton.m in Sources */,
@@ -486,6 +509,7 @@
 				A00734C11C2A830D001FD675 /* BinRadioButton.m in Sources */,
 				A0DE49AB1C4E284E006FD35A /* LmcBlokenLine.m in Sources */,
 				7353C76E1BF9D2E30033170E /* LmcAppDelegate.m in Sources */,
+				A30D84561CE1DE9D00280F90 /* MBProgressHUD.m in Sources */,
 				A01FA98A1C965A8C00581A7A /* McUINavigationController.m in Sources */,
 				A08224281C5F08880053E063 /* RollingView.m in Sources */,
 				A0DE49A21C4DD4E2006FD35A /* pageTwo.m in Sources */,

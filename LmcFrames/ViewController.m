@@ -197,6 +197,18 @@
 - (void)seletedIndex:(int)index
 {
     NSLog(@"%d",index);
+    if (index == 1) {
+        
+        [MBProgressHUD showMessage:@"加载中……"];
+        // 几秒后消失,当前，这里可以改为网络请求
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            
+            // 移除HUD
+            [MBProgressHUD hideHUD];
+            // 提醒有没有新版本
+            [MBProgressHUD showError:@"没有新数据"];
+        });
+    }
     if (index == 5) {
         //
         MCPayAlertView *payAlert = [[MCPayAlertView alloc] init];
