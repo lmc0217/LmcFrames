@@ -45,8 +45,7 @@
     clickView.tag = 777;
     [clickView addTarget:self clickAction:@selector(clickeView:)];
     [self.view addSubview:clickView];
-    
-    self.view.backgroundColor = [UIColor redColor];
+
     BinRadioButton *clickView2 = [BinRadioButton buttonWithType:UIButtonTypeCustom];
     clickView2.frame = CGRectMake(100, 340, 150, 30);
     clickView2.backgroundColor = [UIColor colorWithHexString:@"#0493DD"];
@@ -197,16 +196,23 @@
 - (void)seletedIndex:(int)index
 {
     NSLog(@"%d",index);
+    if (index == 0) {
+        
+        [MBProgressHUD showText:@"卧泥玛卧泥玛……"];
+//        [MBProgressHUD showText:@"卧泥玛卧泥玛……" toView:self.view];
+    }
     if (index == 1) {
         
-        [MBProgressHUD showMessage:@"加载中……"];
+//        [MBProgressHUD showLoading:nil];//只显示菊花
+        [MBProgressHUD showLoading:@"加载中……"];
         // 几秒后消失,当前，这里可以改为网络请求
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             
             // 移除HUD
             [MBProgressHUD hideHUD];
             // 提醒有没有新版本
-            [MBProgressHUD showError:@"没有新数据"];
+//            [MBProgressHUD showError:@"没有新数据"];
+            [MBProgressHUD showSuccess:@"加载成功"];
         });
     }
     if (index == 5) {
