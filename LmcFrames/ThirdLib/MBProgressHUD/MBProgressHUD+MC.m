@@ -32,8 +32,9 @@
 //    hud.label.textColor = [UIColor whiteColor];
     // Move to bottm center.
     hud.offset = CGPointMake(0.f, 0.f);
-    
-    [hud hideAnimated:YES afterDelay:2.f];
+//    hud.backgroundView.style = MBProgressHUDBackgroundStyleSolidColor;
+//    hud.backgroundView.color = [[UIColor blackColor] colorWithAlphaComponent:0.5];
+    [hud hideAnimated:YES afterDelay:1.5f];
 }
 /**
  *  显示文本
