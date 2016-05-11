@@ -121,7 +121,7 @@
 }
 
 /**
- *  显示一些信息
+ *  显示loading...
  *
  *  @param message 信息内容
  *  @param view    需要显示信息的视图
