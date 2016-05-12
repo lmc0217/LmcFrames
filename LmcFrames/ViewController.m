@@ -206,7 +206,7 @@
 //        [MBProgressHUD showLoading:nil];//只显示菊花
         [MBProgressHUD showLoading:@"加载中"];
         // 几秒后消失,当前，这里可以改为网络请求
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5.0 * NSEC_PER_SEC)), SYS_SERIAL_QUEUE, ^{
             
             // 移除HUD
             [MBProgressHUD hideHUD];
