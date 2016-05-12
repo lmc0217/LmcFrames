@@ -29,8 +29,9 @@
     //蒙版(方法已换，但还能用)
 //    hud.dimBackground = YES;
     hud.label.text = text;
-    //字体颜色
+    //定制颜色样式
     hud.contentColor = [UIColor whiteColor];
+    hud.bezelView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.8];
     // Move to bottm center.
     hud.offset = CGPointMake(0.f, 0.f);
 //    hud.backgroundView.style = MBProgressHUDBackgroundStyleSolidColor;
@@ -62,7 +63,9 @@
     // 设置图片
     hud.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:[NSString stringWithFormat:@"MBProgressHUD.bundle/%@", icon]]];
     hud.label.text = text;
+    
     hud.contentColor = [UIColor whiteColor];
+    hud.bezelView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.8];
     //正方形
     hud.square = YES;
     // 隐藏时候从父控件中移除
@@ -138,6 +141,7 @@
     hud.backgroundView.style = MBProgressHUDBackgroundStyleBlur;
     hud.label.text = message;
     hud.contentColor = [UIColor whiteColor];
+    hud.bezelView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.8];
     // 隐藏时候从父控件中移除
     hud.removeFromSuperViewOnHide = YES;
 
