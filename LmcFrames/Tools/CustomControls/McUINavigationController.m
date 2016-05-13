@@ -90,10 +90,19 @@
     }
 }
 
+// 让VC同时接受多个手势，解决侧滑返回手势和ScrollView滑动手势的冲突
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer
+{
+    return YES;
+}
+//解决手势返回的时候，被 pop 的VC 中的 UIScrollView 会跟着一起滚动的问题。
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldBeRequiredToFailByGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer
+{
+    return [gestureRecognizer isKindOfClass:UIScreenEdgePanGestureRecognizer.class];
+}
 
 //横竖屏转换
 #pragma mark - Orientation
-
 - (BOOL)shouldAutorotate
 {
     return [self.viewControllers.lastObject shouldAutorotate];
