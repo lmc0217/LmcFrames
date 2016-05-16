@@ -131,6 +131,9 @@
     NSString *imageURL = [[[_arrData objectAtIndex:indexPath.row] allValues] objectAtIndex:0];
     DDDTouchPeekVC *peekVC = [[DDDTouchPeekVC alloc] initWithImageURL:imageURL];
     peekVC.view.backgroundColor = [UIColor greenColor];
+    
+    //设置第一次重按显示的控制器大小
+    peekVC.preferredContentSize = CGSizeMake(0, 300);
 //    NSLog(@"%@",location);
     return peekVC;
 #endif
