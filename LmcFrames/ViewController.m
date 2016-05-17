@@ -17,17 +17,54 @@
 #import "DDDTouchVC.h"
 #import "UIColor+Hex.h"
 #import "McUINavigationController.h"
+#import "Reachability.h"
 
 @interface ViewController ()<ClickedListViewDelegate>
 
 @end
 
 @implementation ViewController
+//利用Reachability检测是否有网络
+- (BOOL)isHaveNetWork
+{
+    return([[Reachability reachabilityForInternetConnection] currentReachabilityStatus] != NotReachable);
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     self.view.backgroundColor = [UIColor redColor];
+    //是否有网络
+    if ([self isHaveNetWork]) {
+        NSLog(@"有网络");
+    }
+    else
+    {
+        NSLog(@"没有网络");
+    }
+    //网络监测
+    [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
+        NSLog(@"Reachability: %@", AFStringFromNetworkReachabilityStatus(status));
+        switch (status) {
+            case AFNetworkReachabilityStatusUnknown:
+                NSLog(@"未知");
+                break;
+            case AFNetworkReachabilityStatusNotReachable:
+                NSLog(@"没有网络");
+                break;
+            case AFNetworkReachabilityStatusReachableViaWWAN:
+                NSLog(@"3G|4G");
+                break;
+            case AFNetworkReachabilityStatusReachableViaWiFi:
+                NSLog(@"WiFi");
+                break;
+            default:
+                break;
+        }
+    }];
+    
+    [[AFNetworkReachabilityManager sharedManager] startMonitoring];
+    
 #if 1
     NSDictionary *dic1 = [NSDictionary dictionaryWithObject:@"icon1" forKey:@"扫一扫"];
     NSDictionary *dic2 = [NSDictionary dictionaryWithObject:@"icon1" forKey:@"加好友"];
@@ -199,21 +236,69 @@
     if (index == 0) {
         
         [MBProgressHUD showText:@"卧泥玛卧泥玛……"];
-//        [MBProgressHUD showText:@"卧泥玛卧泥玛……" toView:self.view];
+        NSString *url = @"http://api.hudong.com/iphonexml.do";
+        NSDictionary *parameters = @{@"type":@"focus-c"};
+        AFHTTPSessionManager *httpManager = [AFHTTPSessionManager manager];
+        
+    
+        httpManager.responseSerializer = [AFXMLParserResponseSerializer serializer];//返回xml(NSXMLParser对象)
+        //    manager.responseSerializer = [AFJSONResponseSerializer serializer];//返回json(NSDictionary对象)
+        //    manager.responseSerializer = [AFImageResponseSerializer serializer];//返回图片(UIImage对象)
+
+        [httpManager GET:url parameters:parameters progress:^(NSProgress * _Nonnull downloadProgress) {
+            //
+        } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+            //
+            NSLog(@"%@", responseObject);
+        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+            //
+            NSLog(@"Error: %@", error);
+        }];
     }
     if (index == 1) {
+//        
+        [MBProgressHUD showLoading:nil];//只显示菊花
         
-//        [MBProgressHUD showLoading:nil];//只显示菊花
-        [MBProgressHUD showLoading:@"加载中"];
-        // 几秒后消失,当前，这里可以改为网络请求
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5.0 * NSEC_PER_SEC)), SYS_SERIAL_QUEUE, ^{
             
+            [MBProgressHUD hideHUD];
+            [MBProgressHUD showSuccess:@"擦擦"];
+            
+        });
+        
+    }
+    if (index == 2) {
+        //
+        [MBProgressHUD showLoading:@"加载中"];
+        // 几秒后消失,当前，这里可以改为网络请求
+        AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+        NSString *url = @"http://59.188.86.204:8000/API/city";
+        NSDictionary *parameters = @{@"p":@"{\"a\":1,\"b\":1}"};
+        manager.responseSerializer = [AFJSONResponseSerializer serializer];
+        
+        // 设置超时时间
+        [manager.requestSerializer willChangeValueForKey:@"timeoutInterval"];
+        manager.requestSerializer.timeoutInterval = 10.f;
+        [manager.requestSerializer didChangeValueForKey:@"timeoutInterval"];
+        
+        [manager POST:url parameters:parameters progress:^(NSProgress * _Nonnull uploadProgress) {
+            //
+        } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+            //
+            NSLog(@"%@", responseObject);
             // 移除HUD
             [MBProgressHUD hideHUD];
-            // 提醒有没有新版本
-//            [MBProgressHUD showError:@"没有新数据"];
             [MBProgressHUD showSuccess:@"加载成功"];
-        });
+        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+            //
+            NSLog(@"Error: %@", error);
+            // 移除HUD
+            [MBProgressHUD hideHUD];
+            [MBProgressHUD showSuccess:@"加载失败"];
+        }];
+        
+        
+        
     }
     if (index == 5) {
         //

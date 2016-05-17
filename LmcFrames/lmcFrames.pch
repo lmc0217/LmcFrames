@@ -14,6 +14,7 @@
 #import "SystemTool.h"
 //#import "MBProgressHUD.h"
 #import "MBProgressHUD+MC.h"
+#import "AFNetworking.h"
 
 #endif
 // Include any system framework and library headers here that should be included in all compilation units.
