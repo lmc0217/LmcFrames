@@ -18,7 +18,7 @@
 #import "UIColor+Hex.h"
 #import "McUINavigationController.h"
 #import "Reachability.h"
-
+#import "McNetworking.h"
 @interface ViewController ()<ClickedListViewDelegate>
 
 @end
@@ -238,22 +238,13 @@
         [MBProgressHUD showText:@"卧泥玛卧泥玛……"];
         NSString *url = @"http://api.hudong.com/iphonexml.do";
         NSDictionary *parameters = @{@"type":@"focus-c"};
-        AFHTTPSessionManager *httpManager = [AFHTTPSessionManager manager];
-        
-    
-        httpManager.responseSerializer = [AFXMLParserResponseSerializer serializer];//返回xml(NSXMLParser对象)
-        //    manager.responseSerializer = [AFJSONResponseSerializer serializer];//返回json(NSDictionary对象)
-        //    manager.responseSerializer = [AFImageResponseSerializer serializer];//返回图片(UIImage对象)
-
-        [httpManager GET:url parameters:parameters progress:^(NSProgress * _Nonnull downloadProgress) {
-            //
-        } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-            //
-            NSLog(@"%@", responseObject);
-        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-            //
-            NSLog(@"Error: %@", error);
-        }];
+       [McNetworking getWithUrl:url params:parameters success:^(id response) {
+           //
+           NSLog(@"%@",response);
+       } fail:^(NSError *error) {
+           //
+           NSLog(@"%@",error);
+       }];
     }
     if (index == 1) {
 //        
@@ -271,25 +262,16 @@
         //
         [MBProgressHUD showLoading:@"加载中"];
         // 几秒后消失,当前，这里可以改为网络请求
-        AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
         NSString *url = @"http://59.188.86.204:8000/API/city";
         NSDictionary *parameters = @{@"p":@"{\"a\":1,\"b\":1}"};
-        manager.responseSerializer = [AFJSONResponseSerializer serializer];
         
-        // 设置超时时间
-        [manager.requestSerializer willChangeValueForKey:@"timeoutInterval"];
-        manager.requestSerializer.timeoutInterval = 10.f;
-        [manager.requestSerializer didChangeValueForKey:@"timeoutInterval"];
-        
-        [manager POST:url parameters:parameters progress:^(NSProgress * _Nonnull uploadProgress) {
+        [McNetworking postWithUrl:url params:parameters success:^(id response) {
             //
-        } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-            //
-            NSLog(@"%@", responseObject);
+            NSLog(@"%@", response);
             // 移除HUD
             [MBProgressHUD hideHUD];
             [MBProgressHUD showSuccess:@"加载成功"];
-        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        } fail:^(NSError *error) {
             //
             NSLog(@"Error: %@", error);
             // 移除HUD
