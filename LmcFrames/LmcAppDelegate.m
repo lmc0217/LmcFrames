@@ -23,9 +23,6 @@
     //要判断，但发现我加上之后通过标签启动时不会加载预览界面
 //    if (launchOptions[@"UIApplicationLaunchOptionsShortcutItemKey"] == nil)
 //    {
-    
-    
-    
         return YES;
 //    }
 //    else
