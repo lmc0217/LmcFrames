@@ -35,6 +35,10 @@
  */
 - (void)saveAutoLoginFlag:(BOOL)bFlag accountName:(NSString *)strAccount password:(NSString *)strPasswd;
 
-
+#pragma mark - 切换界面
+/*
+ *  @breif: 推出tabbar
+ */
+-(void)pushtoMain;
 @end
 

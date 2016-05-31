@@ -11,6 +11,7 @@
 
 #ifdef __OBJC__
 #import <UIKit/UIKit.h>
+#import "RootObject.h"
 #import "SystemTool.h"
 //#import "MBProgressHUD.h"
 #import "MBProgressHUD+MC.h"
