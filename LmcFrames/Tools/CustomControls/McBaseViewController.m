@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self initNavigationTitle];
+//    [self initNavigationTitle];
     self.view.backgroundColor = [UIColor whiteColor];
 }
 
@@ -63,7 +63,10 @@
 #pragma mark- 设置导航栏title
 - (void)setCustomTitle:(NSString *)title
 {
+    /*
     [_customTitleLabel setText:title];
+     */
+    self.title = title;
 }
 
 
