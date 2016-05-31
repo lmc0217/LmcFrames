@@ -55,10 +55,6 @@
 		A34668F51CFD74F30019D3AA /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = A34668EE1CFD74F30019D3AA /* UIColor+Hex.m */; };
 		A34668F61CFD74F30019D3AA /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = A34668F01CFD74F30019D3AA /* UIImage+Color.m */; };
 		A34668F71CFD74F30019D3AA /* UIView+McGetNavgationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A34668F21CFD74F30019D3AA /* UIView+McGetNavgationVC.m */; };
-		A34668FA1CFD75EF0019D3AA /* ModuleOneVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A34668F91CFD75EF0019D3AA /* ModuleOneVC.m */; };
-		A34668FD1CFD76210019D3AA /* ModuleTwoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A34668FC1CFD76210019D3AA /* ModuleTwoVC.m */; };
-		A34669001CFD76320019D3AA /* ModuleThreeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A34668FF1CFD76320019D3AA /* ModuleThreeVC.m */; };
-		A34669031CFD76410019D3AA /* ModuleFourVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A34669021CFD76410019D3AA /* ModuleFourVC.m */; };
 		A346690B1CFD76A70019D3AA /* find_s@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A34669051CFD76A70019D3AA /* find_s@2x.png */; };
 		A346690C1CFD76A70019D3AA /* find_n@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A34669061CFD76A70019D3AA /* find_n@2x.png */; };
 		A346690D1CFD76A70019D3AA /* me_n@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A34669071CFD76A70019D3AA /* me_n@2x.png */; };
@@ -85,6 +81,10 @@
 		A3A56DD41CD47D3100CEE361 /* McBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A56DD31CD47D3100CEE361 /* McBaseViewController.m */; };
 		A3A56DD71CD47DDD00CEE361 /* DDDTouchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A56DD61CD47DDD00CEE361 /* DDDTouchVC.m */; };
 		A3A56DDA1CD47E2300CEE361 /* DDDTouchPeekVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A56DD91CD47E2300CEE361 /* DDDTouchPeekVC.m */; };
+		A3E0D7AB1CFD81E600D65008 /* ModuleOneVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E0D7A11CFD81E600D65008 /* ModuleOneVC.m */; };
+		A3E0D7AC1CFD81E600D65008 /* ModuleThreeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E0D7A41CFD81E600D65008 /* ModuleThreeVC.m */; };
+		A3E0D7AD1CFD81E600D65008 /* ModuleTwoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E0D7A71CFD81E600D65008 /* ModuleTwoVC.m */; };
+		A3E0D7AE1CFD81E600D65008 /* ModuleFourVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E0D7AA1CFD81E600D65008 /* ModuleFourVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -173,14 +173,6 @@
 		A34668F01CFD74F30019D3AA /* UIImage+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
 		A34668F11CFD74F30019D3AA /* UIView+McGetNavgationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+McGetNavgationVC.h"; sourceTree = "<group>"; };
 		A34668F21CFD74F30019D3AA /* UIView+McGetNavgationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+McGetNavgationVC.m"; sourceTree = "<group>"; };
-		A34668F81CFD75EF0019D3AA /* ModuleOneVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ModuleOneVC.h; path = LmcFrames/Tools/McCategory/ModuleOneVC.h; sourceTree = SOURCE_ROOT; };
-		A34668F91CFD75EF0019D3AA /* ModuleOneVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ModuleOneVC.m; path = LmcFrames/Tools/McCategory/ModuleOneVC.m; sourceTree = SOURCE_ROOT; };
-		A34668FB1CFD76210019D3AA /* ModuleTwoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ModuleTwoVC.h; path = LmcFrames/Tools/McCategory/ModuleTwoVC.h; sourceTree = SOURCE_ROOT; };
-		A34668FC1CFD76210019D3AA /* ModuleTwoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ModuleTwoVC.m; path = LmcFrames/Tools/McCategory/ModuleTwoVC.m; sourceTree = SOURCE_ROOT; };
-		A34668FE1CFD76320019D3AA /* ModuleThreeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ModuleThreeVC.h; path = LmcFrames/Tools/McCategory/ModuleThreeVC.h; sourceTree = SOURCE_ROOT; };
-		A34668FF1CFD76320019D3AA /* ModuleThreeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ModuleThreeVC.m; path = LmcFrames/Tools/McCategory/ModuleThreeVC.m; sourceTree = SOURCE_ROOT; };
-		A34669011CFD76410019D3AA /* ModuleFourVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ModuleFourVC.h; path = LmcFrames/Tools/McCategory/ModuleFourVC.h; sourceTree = SOURCE_ROOT; };
-		A34669021CFD76410019D3AA /* ModuleFourVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ModuleFourVC.m; path = LmcFrames/Tools/McCategory/ModuleFourVC.m; sourceTree = SOURCE_ROOT; };
 		A34669051CFD76A70019D3AA /* find_s@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "find_s@2x.png"; sourceTree = "<group>"; };
 		A34669061CFD76A70019D3AA /* find_n@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "find_n@2x.png"; sourceTree = "<group>"; };
 		A34669071CFD76A70019D3AA /* me_n@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "me_n@2x.png"; sourceTree = "<group>"; };
@@ -230,6 +222,14 @@
 		A3A56DD61CD47DDD00CEE361 /* DDDTouchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDDTouchVC.m; sourceTree = "<group>"; };
 		A3A56DD81CD47E2300CEE361 /* DDDTouchPeekVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDDTouchPeekVC.h; sourceTree = "<group>"; };
 		A3A56DD91CD47E2300CEE361 /* DDDTouchPeekVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDDTouchPeekVC.m; sourceTree = "<group>"; };
+		A3E0D7A01CFD81E600D65008 /* ModuleOneVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleOneVC.h; sourceTree = "<group>"; };
+		A3E0D7A11CFD81E600D65008 /* ModuleOneVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModuleOneVC.m; sourceTree = "<group>"; };
+		A3E0D7A31CFD81E600D65008 /* ModuleThreeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleThreeVC.h; sourceTree = "<group>"; };
+		A3E0D7A41CFD81E600D65008 /* ModuleThreeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModuleThreeVC.m; sourceTree = "<group>"; };
+		A3E0D7A61CFD81E600D65008 /* ModuleTwoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleTwoVC.h; sourceTree = "<group>"; };
+		A3E0D7A71CFD81E600D65008 /* ModuleTwoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModuleTwoVC.m; sourceTree = "<group>"; };
+		A3E0D7A91CFD81E600D65008 /* ModuleFourVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleFourVC.h; sourceTree = "<group>"; };
+		A3E0D7AA1CFD81E600D65008 /* ModuleFourVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModuleFourVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -373,8 +373,8 @@
 		A088DE781BFEB780001DBDE3 /* FunctionModule */ = {
 			isa = PBXGroup;
 			children = (
+				A3E0D79E1CFD81E600D65008 /* HomePage */,
 				A088DE801BFEBB40001DBDE3 /* Login */,
-				A088DE7B1BFEBB40001DBDE3 /* HomePage */,
 			);
 			path = FunctionModule;
 			sourceTree = "<group>";
@@ -404,53 +404,6 @@
 				A30D84511CE1DE9D00280F90 /* MBProgressHUD */,
 			);
 			path = ThirdLib;
-			sourceTree = "<group>";
-		};
-		A088DE7B1BFEBB40001DBDE3 /* HomePage */ = {
-			isa = PBXGroup;
-			children = (
-				A088DE7D1BFEBB40001DBDE3 /* ModuleOne */,
-				A088DE7F1BFEBB40001DBDE3 /* ModuleTwo */,
-				A088DE7E1BFEBB40001DBDE3 /* ModuleThree */,
-				A088DE7C1BFEBB40001DBDE3 /* ModuleFour */,
-			);
-			path = HomePage;
-			sourceTree = "<group>";
-		};
-		A088DE7C1BFEBB40001DBDE3 /* ModuleFour */ = {
-			isa = PBXGroup;
-			children = (
-				A34669011CFD76410019D3AA /* ModuleFourVC.h */,
-				A34669021CFD76410019D3AA /* ModuleFourVC.m */,
-			);
-			path = ModuleFour;
-			sourceTree = "<group>";
-		};
-		A088DE7D1BFEBB40001DBDE3 /* ModuleOne */ = {
-			isa = PBXGroup;
-			children = (
-				A34668F81CFD75EF0019D3AA /* ModuleOneVC.h */,
-				A34668F91CFD75EF0019D3AA /* ModuleOneVC.m */,
-			);
-			path = ModuleOne;
-			sourceTree = "<group>";
-		};
-		A088DE7E1BFEBB40001DBDE3 /* ModuleThree */ = {
-			isa = PBXGroup;
-			children = (
-				A34668FE1CFD76320019D3AA /* ModuleThreeVC.h */,
-				A34668FF1CFD76320019D3AA /* ModuleThreeVC.m */,
-			);
-			path = ModuleThree;
-			sourceTree = "<group>";
-		};
-		A088DE7F1BFEBB40001DBDE3 /* ModuleTwo */ = {
-			isa = PBXGroup;
-			children = (
-				A34668FB1CFD76210019D3AA /* ModuleTwoVC.h */,
-				A34668FC1CFD76210019D3AA /* ModuleTwoVC.m */,
-			);
-			path = ModuleTwo;
 			sourceTree = "<group>";
 		};
 		A088DE801BFEBB40001DBDE3 /* Login */ = {
@@ -614,6 +567,53 @@
 			path = "UIKit+AFNetworking";
 			sourceTree = "<group>";
 		};
+		A3E0D79E1CFD81E600D65008 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				A3E0D79F1CFD81E600D65008 /* ModuleOne */,
+				A3E0D7A51CFD81E600D65008 /* ModuleTwo */,
+				A3E0D7A21CFD81E600D65008 /* ModuleThree */,
+				A3E0D7A81CFD81E600D65008 /* ModulFour */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		A3E0D79F1CFD81E600D65008 /* ModuleOne */ = {
+			isa = PBXGroup;
+			children = (
+				A3E0D7A01CFD81E600D65008 /* ModuleOneVC.h */,
+				A3E0D7A11CFD81E600D65008 /* ModuleOneVC.m */,
+			);
+			path = ModuleOne;
+			sourceTree = "<group>";
+		};
+		A3E0D7A21CFD81E600D65008 /* ModuleThree */ = {
+			isa = PBXGroup;
+			children = (
+				A3E0D7A31CFD81E600D65008 /* ModuleThreeVC.h */,
+				A3E0D7A41CFD81E600D65008 /* ModuleThreeVC.m */,
+			);
+			path = ModuleThree;
+			sourceTree = "<group>";
+		};
+		A3E0D7A51CFD81E600D65008 /* ModuleTwo */ = {
+			isa = PBXGroup;
+			children = (
+				A3E0D7A61CFD81E600D65008 /* ModuleTwoVC.h */,
+				A3E0D7A71CFD81E600D65008 /* ModuleTwoVC.m */,
+			);
+			path = ModuleTwo;
+			sourceTree = "<group>";
+		};
+		A3E0D7A81CFD81E600D65008 /* ModulFour */ = {
+			isa = PBXGroup;
+			children = (
+				A3E0D7A91CFD81E600D65008 /* ModuleFourVC.h */,
+				A3E0D7AA1CFD81E600D65008 /* ModuleFourVC.m */,
+			);
+			path = ModulFour;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -707,13 +707,13 @@
 				A395C8941CEC3634009D04F4 /* UIRefreshControl+AFNetworking.m in Sources */,
 				A395C88F1CEC3634009D04F4 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				A34668F61CFD74F30019D3AA /* UIImage+Color.m in Sources */,
-				A34669031CFD76410019D3AA /* ModuleFourVC.m in Sources */,
+				A3E0D7AE1CFD81E600D65008 /* ModuleFourVC.m in Sources */,
 				A3A56DDA1CD47E2300CEE361 /* DDDTouchPeekVC.m in Sources */,
 				A30D845A1CE1DF6700280F90 /* MBProgressHUD+MC.m in Sources */,
 				A395C8951CEC3634009D04F4 /* UIWebView+AFNetworking.m in Sources */,
 				7353C7711BF9D2E30033170E /* ViewController.m in Sources */,
 				A34668F71CFD74F30019D3AA /* UIView+McGetNavgationVC.m in Sources */,
-				A34668FA1CFD75EF0019D3AA /* ModuleOneVC.m in Sources */,
+				A3E0D7AB1CFD81E600D65008 /* ModuleOneVC.m in Sources */,
 				A395C8931CEC3634009D04F4 /* UIProgressView+AFNetworking.m in Sources */,
 				A00734C51C2A8498001FD675 /* UIView+BinExtension.m in Sources */,
 				A00734BE1C2A830D001FD675 /* BinArrowButton.m in Sources */,
@@ -721,16 +721,15 @@
 				A00310F31C7174E50060DE8D /* MCPayAlertView.m in Sources */,
 				A00734C11C2A830D001FD675 /* BinRadioButton.m in Sources */,
 				A395C88E1CEC3634009D04F4 /* AFImageDownloader.m in Sources */,
-				A34669001CFD76320019D3AA /* ModuleThreeVC.m in Sources */,
 				A0DE49AB1C4E284E006FD35A /* LmcBlokenLine.m in Sources */,
 				7353C76E1BF9D2E30033170E /* LmcAppDelegate.m in Sources */,
+				A3E0D7AC1CFD81E600D65008 /* ModuleThreeVC.m in Sources */,
 				A395C8911CEC3634009D04F4 /* UIButton+AFNetworking.m in Sources */,
 				A395C88A1CEC3634009D04F4 /* AFURLSessionManager.m in Sources */,
 				A395C88C1CEC3634009D04F4 /* Reachability.m in Sources */,
 				A395C8851CEC3634009D04F4 /* AFHTTPSessionManager.m in Sources */,
 				A30D84561CE1DE9D00280F90 /* MBProgressHUD.m in Sources */,
 				A34668F51CFD74F30019D3AA /* UIColor+Hex.m in Sources */,
-				A34668FD1CFD76210019D3AA /* ModuleTwoVC.m in Sources */,
 				A01FA98A1C965A8C00581A7A /* McUINavigationController.m in Sources */,
 				A08224281C5F08880053E063 /* RollingView.m in Sources */,
 				A0DE49A21C4DD4E2006FD35A /* pageTwo.m in Sources */,
@@ -754,6 +753,7 @@
 				A0DE499B1C4DD21E006FD35A /* LmcIntroView.m in Sources */,
 				7353C76B1BF9D2E30033170E /* main.m in Sources */,
 				A395C88B1CEC3634009D04F4 /* McNetworking.m in Sources */,
+				A3E0D7AD1CFD81E600D65008 /* ModuleTwoVC.m in Sources */,
 				A395C8881CEC3634009D04F4 /* AFURLRequestSerialization.m in Sources */,
 				A0C177B01C04338900C7F5C5 /* ClickedListView.m in Sources */,
 				A395C8871CEC3634009D04F4 /* AFSecurityPolicy.m in Sources */,
