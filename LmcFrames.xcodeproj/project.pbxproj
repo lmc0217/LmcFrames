@@ -85,6 +85,8 @@
 		A3E0D7AC1CFD81E600D65008 /* ModuleThreeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E0D7A41CFD81E600D65008 /* ModuleThreeVC.m */; };
 		A3E0D7AD1CFD81E600D65008 /* ModuleTwoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E0D7A71CFD81E600D65008 /* ModuleTwoVC.m */; };
 		A3E0D7AE1CFD81E600D65008 /* ModuleFourVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E0D7AA1CFD81E600D65008 /* ModuleFourVC.m */; };
+		A3E0D7B21CFD83FF00D65008 /* ShakeSwitchImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E0D7B11CFD83FF00D65008 /* ShakeSwitchImageView.m */; };
+		A3E0D7B61CFD874100D65008 /* ShakeSwitchImgVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E0D7B51CFD874100D65008 /* ShakeSwitchImgVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -230,6 +232,10 @@
 		A3E0D7A71CFD81E600D65008 /* ModuleTwoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModuleTwoVC.m; sourceTree = "<group>"; };
 		A3E0D7A91CFD81E600D65008 /* ModuleFourVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleFourVC.h; sourceTree = "<group>"; };
 		A3E0D7AA1CFD81E600D65008 /* ModuleFourVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModuleFourVC.m; sourceTree = "<group>"; };
+		A3E0D7B01CFD83FF00D65008 /* ShakeSwitchImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShakeSwitchImageView.h; sourceTree = "<group>"; };
+		A3E0D7B11CFD83FF00D65008 /* ShakeSwitchImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShakeSwitchImageView.m; sourceTree = "<group>"; };
+		A3E0D7B41CFD874100D65008 /* ShakeSwitchImgVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShakeSwitchImgVC.h; sourceTree = "<group>"; };
+		A3E0D7B51CFD874100D65008 /* ShakeSwitchImgVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShakeSwitchImgVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -583,6 +589,8 @@
 			children = (
 				A3E0D7A01CFD81E600D65008 /* ModuleOneVC.h */,
 				A3E0D7A11CFD81E600D65008 /* ModuleOneVC.m */,
+				A3E0D7B31CFD86E200D65008 /* Controller */,
+				A3E0D7AF1CFD834700D65008 /* View */,
 			);
 			path = ModuleOne;
 			sourceTree = "<group>";
@@ -612,6 +620,24 @@
 				A3E0D7AA1CFD81E600D65008 /* ModuleFourVC.m */,
 			);
 			path = ModulFour;
+			sourceTree = "<group>";
+		};
+		A3E0D7AF1CFD834700D65008 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A3E0D7B01CFD83FF00D65008 /* ShakeSwitchImageView.h */,
+				A3E0D7B11CFD83FF00D65008 /* ShakeSwitchImageView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A3E0D7B31CFD86E200D65008 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A3E0D7B41CFD874100D65008 /* ShakeSwitchImgVC.h */,
+				A3E0D7B51CFD874100D65008 /* ShakeSwitchImgVC.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -709,6 +735,7 @@
 				A34668F61CFD74F30019D3AA /* UIImage+Color.m in Sources */,
 				A3E0D7AE1CFD81E600D65008 /* ModuleFourVC.m in Sources */,
 				A3A56DDA1CD47E2300CEE361 /* DDDTouchPeekVC.m in Sources */,
+				A3E0D7B61CFD874100D65008 /* ShakeSwitchImgVC.m in Sources */,
 				A30D845A1CE1DF6700280F90 /* MBProgressHUD+MC.m in Sources */,
 				A395C8951CEC3634009D04F4 /* UIWebView+AFNetworking.m in Sources */,
 				7353C7711BF9D2E30033170E /* ViewController.m in Sources */,
@@ -732,6 +759,7 @@
 				A34668F51CFD74F30019D3AA /* UIColor+Hex.m in Sources */,
 				A01FA98A1C965A8C00581A7A /* McUINavigationController.m in Sources */,
 				A08224281C5F08880053E063 /* RollingView.m in Sources */,
+				A3E0D7B21CFD83FF00D65008 /* ShakeSwitchImageView.m in Sources */,
 				A0DE49A21C4DD4E2006FD35A /* pageTwo.m in Sources */,
 				A3A56DD71CD47DDD00CEE361 /* DDDTouchVC.m in Sources */,
 				A088DE6C1BFEABFF001DBDE3 /* RootObject.m in Sources */,

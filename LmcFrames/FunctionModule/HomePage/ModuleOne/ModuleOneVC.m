@@ -8,6 +8,7 @@
 
 #import "ModuleOneVC.h"
 #import "DDDTouchVC.h"
+#import "ShakeSwitchImgVC.h"
 
 @interface ModuleOneVC ()
 
@@ -32,7 +33,7 @@
 {
    
     _arrData = [NSMutableArray array];
-    NSArray *arr1 = [NSArray arrayWithObjects:@"3D Touch", nil];
+    NSArray *arr1 = [NSArray arrayWithObjects:@"3D Touch", @"运动事件（摇一摇）",nil];
     [_arrData addObject:arr1];
     
     NSArray *arr2 = [NSArray arrayWithObjects:@"密码安全等级", nil];
@@ -155,6 +156,12 @@
             DDDTouchVC *dddTouchVC = [[DDDTouchVC alloc] init];
             dddTouchVC.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:dddTouchVC animated:YES];
+            return;
+        }
+        if (indexPath.row == 1) {
+            ShakeSwitchImgVC *shakeSwitchImgVC = [[ShakeSwitchImgVC alloc] init];
+            shakeSwitchImgVC.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:shakeSwitchImgVC animated:YES];
             return;
         }
     }
