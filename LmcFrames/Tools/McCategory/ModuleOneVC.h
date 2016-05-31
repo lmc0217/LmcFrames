@@ -8,6 +8,8 @@
 
 #import "McBaseViewController.h"
 
-@interface ModuleOneVC : McBaseViewController
+@interface ModuleOneVC : McBaseViewController<UITableViewDataSource,UITableViewDelegate>
 
+@property (nonatomic, strong) UITableView *mainTableView;
+@property (nonatomic,strong) NSMutableArray *arrData;
 @end
