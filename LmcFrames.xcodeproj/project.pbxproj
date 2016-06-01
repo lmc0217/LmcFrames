@@ -379,8 +379,8 @@
 		A088DE781BFEB780001DBDE3 /* FunctionModule */ = {
 			isa = PBXGroup;
 			children = (
-				A3E0D79E1CFD81E600D65008 /* HomePage */,
 				A088DE801BFEBB40001DBDE3 /* Login */,
+				A3E0D79E1CFD81E600D65008 /* HomePage */,
 			);
 			path = FunctionModule;
 			sourceTree = "<group>";

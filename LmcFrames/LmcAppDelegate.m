@@ -9,6 +9,7 @@
 #import "LmcAppDelegate.h"
 #import "DDDTouchVC.h"
 #import "McUINavigationController.h"
+#import "UIImage+Color.h"
 
 @interface LmcAppDelegate ()
 
@@ -70,7 +71,7 @@
     if([shortcutItem.type isEqualToString:@"666"]){
         DDDTouchVC *vc = [[DDDTouchVC alloc] init];
         McUINavigationController *nav_VC = [[McUINavigationController alloc] initWithRootViewController:vc];
-        [nav_VC setBackgroundImage:[UIImage imageNamed:@"nav_bg"]];
+        [nav_VC setBackgroundImage:[UIImage imageWithColor:GREENTYPE]];
         //设置当前的VC 为rootVC
         [self.window.rootViewController presentViewController:nav_VC animated:YES completion:^{
         }];
@@ -80,7 +81,7 @@
 
         DDDTouchVC *vc = [[DDDTouchVC alloc] init];
         McUINavigationController *nav_VC = [[McUINavigationController alloc] initWithRootViewController:vc];
-        [nav_VC setBackgroundImage:[UIImage imageNamed:@"nav_bg"]];
+        [nav_VC setBackgroundImage:[UIImage imageWithColor:GREENTYPE]];
         //设置当前的VC 为rootVC
         [self.window.rootViewController presentViewController:nav_VC animated:YES completion:^{
         }];
@@ -89,7 +90,7 @@
     if ([shortcutItem.type isEqualToString:@"888"]) {
         DDDTouchVC *vc = [[DDDTouchVC alloc] init];
         McUINavigationController *nav_VC = [[McUINavigationController alloc] initWithRootViewController:vc];
-        [nav_VC setBackgroundImage:[UIImage imageNamed:@"nav_bg"]];
+        [nav_VC setBackgroundImage:[UIImage imageWithColor:GREENTYPE]];
         //设置当前的VC 为rootVC
         [self.window.rootViewController presentViewController:nav_VC animated:YES completion:^{
         }];
