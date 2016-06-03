@@ -9,3 +9,17 @@
 "ButtonTile" = "进入3D Touch ...";
 
 "Detail" = "Detail...";
+
+//tabBar
+"msg" = "消息";
+"find" = "发现";
+"me" = "我";
+//msg
+"3DTouch" = "3D Touch";
+"moveEvent" = "运行事件（摇一摇）";
+"chinese" = "中文";
+"english" = "英文";
+"server" = "服务条款";
+"aboutUS" = "关于我们";
+"contactUS" = "联系我们";
+"version" = "版本";

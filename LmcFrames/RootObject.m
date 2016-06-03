@@ -86,7 +86,7 @@
 -(void)pushtoMain
 {
     ModuleOneVC *aVC = [[ModuleOneVC alloc] init];
-    aVC.title = @"消息";
+    aVC.title = McLocalizedString(@"msg", @"");
     aVC.tabBarItem.image = [UIImage imageNamed:@"msg_n"];
     aVC.tabBarItem.selectedImage = [UIImage imageNamed:@"msg_s"];
     [aVC.tabBarItem.image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
@@ -94,7 +94,7 @@
     
     
     ModuleTwoVC *bVC = [[ModuleTwoVC alloc] init];
-    bVC.title = @"发现";
+    bVC.title = McLocalizedString(@"find", @"");
     bVC.tabBarItem.image = [UIImage imageNamed:@"find_n"];
     bVC.tabBarItem.selectedImage = [UIImage imageNamed:@"find_s"];
     [bVC.tabBarItem.image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
@@ -102,7 +102,7 @@
     
     
     ModuleThreeVC *cVC = [[ModuleThreeVC alloc] init];
-    cVC.title = @"我";
+    cVC.title = McLocalizedString(@"me", @"");
     cVC.tabBarItem.image = [UIImage imageNamed:@"me_n"];
     cVC.tabBarItem.selectedImage = [UIImage imageNamed:@"me_s"];
     [cVC.tabBarItem.image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];

@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self setCustomTitle:@"消息"];
+    [self setCustomTitle:McLocalizedString(@"msg", @"")];
     [self initData];
     [self initSubViews];
 }
@@ -33,16 +33,16 @@
 {
    
     _arrData = [NSMutableArray array];
-    NSArray *arr1 = [NSArray arrayWithObjects:@"3D Touch", @"运动事件（摇一摇）",nil];
+    NSArray *arr1 = [NSArray arrayWithObjects:McLocalizedString(@"3DTouch", @""), McLocalizedString(@"moveEvent", @""),nil];
     [_arrData addObject:arr1];
     
-    NSArray *arr2 = [NSArray arrayWithObjects:@"中文",@"英文", nil];
+    NSArray *arr2 = [NSArray arrayWithObjects:McLocalizedString(@"chinese", @""),McLocalizedString(@"english", @""), nil];
     [_arrData addObject:arr2];
     
-    NSArray *arr3 = [NSArray arrayWithObjects:@"服务条款",@"关于我们",@"联系我们", nil];
+    NSArray *arr3 = [NSArray arrayWithObjects:McLocalizedString(@"server", @""),McLocalizedString(@"aboutUS", @""),McLocalizedString(@"contactUS", @""), nil];
     [_arrData addObject:arr3];
     
-    NSArray *arr4 = [NSArray arrayWithObjects:McLocalizedString(@"ButtonTile",@""), nil];
+    NSArray *arr4 = [NSArray arrayWithObjects:McLocalizedString(@"version",@""), nil];
     [_arrData addObject:arr4];
 }
 - (void)initSubViews

@@ -9,3 +9,17 @@
 "ButtonTile" = "3D Touch...";
 
 "Detail" = "Detail...";
+
+//tabBar
+"msg" = "Message";
+"find" = "Find";
+"me" = "Me";
+//msg
+"3DTouch" = "3D Touch";
+"moveEvent" = "Move Event(Shake)";
+"chinese" = "Chinese";
+"english" = "English";
+"server" = "Server";
+"aboutUS" = "About US";
+"contactUS" = "Contact US";
+"version" = "Version";
