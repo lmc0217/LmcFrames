@@ -36,6 +36,15 @@
 #define SYS_SERIAL_QUEUE      dispatch_get_main_queue()
 #define SYS_UI_QUEUE          dispatch_get_main_queue()
 
+// ----- 多语言设置
+//#define CHINESE @zh-Hans
+//#define ENGLISH @en
+//#define McLocalizedString(key) [[McLocalizableCtrl bundle] localizedStringForKey:(key) value:@"" table:nil]
+
+// ----- 多语言设置2
+#define AppLanguage @"currentLanguage"
+#define McLocalizedString(key, comment) \
+[[NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%@",[[NSUserDefaults standardUserDefaults] objectForKey:@"currentLanguage"]] ofType:@"lproj"]] localizedStringForKey:(key) value:@"" table:nil]
 /*
  *  @brief: 获取内存剩余容量，单位MB
  */

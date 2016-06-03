@@ -36,13 +36,13 @@
     NSArray *arr1 = [NSArray arrayWithObjects:@"3D Touch", @"运动事件（摇一摇）",nil];
     [_arrData addObject:arr1];
     
-    NSArray *arr2 = [NSArray arrayWithObjects:@"密码安全等级", nil];
+    NSArray *arr2 = [NSArray arrayWithObjects:@"中文",@"英文", nil];
     [_arrData addObject:arr2];
     
     NSArray *arr3 = [NSArray arrayWithObjects:@"服务条款",@"关于我们",@"联系我们", nil];
     [_arrData addObject:arr3];
     
-    NSArray *arr4 = [NSArray arrayWithObjects:@"版本", nil];
+    NSArray *arr4 = [NSArray arrayWithObjects:McLocalizedString(@"ButtonTile",@""), nil];
     [_arrData addObject:arr4];
 }
 - (void)initSubViews
@@ -167,7 +167,18 @@
     }
     else if (indexPath.section == 1)
     {
-        
+        if (indexPath.row == 0) {
+            [[NSUserDefaults standardUserDefaults] setObject:@"zh-Hans" forKey:AppLanguage];
+            [[NSUserDefaults standardUserDefaults] synchronize];
+            [[RootObject getRootObject] pushtoMain];
+            return;
+        }
+        if (indexPath.row == 1) {
+            [[NSUserDefaults standardUserDefaults] setObject:@"en" forKey:AppLanguage];
+            [[NSUserDefaults standardUserDefaults] synchronize];
+            [[RootObject getRootObject] pushtoMain];
+            return;
+        }
     }
     else if (indexPath.section == 2)
     {

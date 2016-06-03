@@ -81,6 +81,7 @@
 		A3A56DD41CD47D3100CEE361 /* McBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A56DD31CD47D3100CEE361 /* McBaseViewController.m */; };
 		A3A56DD71CD47DDD00CEE361 /* DDDTouchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A56DD61CD47DDD00CEE361 /* DDDTouchVC.m */; };
 		A3A56DDA1CD47E2300CEE361 /* DDDTouchPeekVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A56DD91CD47E2300CEE361 /* DDDTouchPeekVC.m */; };
+		A3C1AF841D012A5B00FB58CE /* McLocalizableCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = A3C1AF831D012A5B00FB58CE /* McLocalizableCtrl.m */; };
 		A3E0D7AB1CFD81E600D65008 /* ModuleOneVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E0D7A11CFD81E600D65008 /* ModuleOneVC.m */; };
 		A3E0D7AC1CFD81E600D65008 /* ModuleThreeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E0D7A41CFD81E600D65008 /* ModuleThreeVC.m */; };
 		A3E0D7AD1CFD81E600D65008 /* ModuleTwoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E0D7A71CFD81E600D65008 /* ModuleTwoVC.m */; };
@@ -224,6 +225,8 @@
 		A3A56DD61CD47DDD00CEE361 /* DDDTouchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDDTouchVC.m; sourceTree = "<group>"; };
 		A3A56DD81CD47E2300CEE361 /* DDDTouchPeekVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDDTouchPeekVC.h; sourceTree = "<group>"; };
 		A3A56DD91CD47E2300CEE361 /* DDDTouchPeekVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDDTouchPeekVC.m; sourceTree = "<group>"; };
+		A3C1AF821D012A5B00FB58CE /* McLocalizableCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = McLocalizableCtrl.h; sourceTree = "<group>"; };
+		A3C1AF831D012A5B00FB58CE /* McLocalizableCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = McLocalizableCtrl.m; sourceTree = "<group>"; };
 		A3E0D7A01CFD81E600D65008 /* ModuleOneVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleOneVC.h; sourceTree = "<group>"; };
 		A3E0D7A11CFD81E600D65008 /* ModuleOneVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModuleOneVC.m; sourceTree = "<group>"; };
 		A3E0D7A31CFD81E600D65008 /* ModuleThreeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleThreeVC.h; sourceTree = "<group>"; };
@@ -361,6 +364,7 @@
 		A088DE731BFEB202001DBDE3 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				A3C1AF811D012A0700FB58CE /* McLocalizableController */,
 				A34668E81CFD74F30019D3AA /* McCategory */,
 				A00310F01C7174C70060DE8D /* MCPayAlert */,
 				A08224251C5F085F0053E063 /* rollingSubtitles */,
@@ -573,6 +577,15 @@
 			path = "UIKit+AFNetworking";
 			sourceTree = "<group>";
 		};
+		A3C1AF811D012A0700FB58CE /* McLocalizableController */ = {
+			isa = PBXGroup;
+			children = (
+				A3C1AF821D012A5B00FB58CE /* McLocalizableCtrl.h */,
+				A3C1AF831D012A5B00FB58CE /* McLocalizableCtrl.m */,
+			);
+			path = McLocalizableController;
+			sourceTree = "<group>";
+		};
 		A3E0D79E1CFD81E600D65008 /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
@@ -776,6 +789,7 @@
 				A395C8921CEC3634009D04F4 /* UIImageView+AFNetworking.m in Sources */,
 				A00734C21C2A830D001FD675 /* BinTextField.m in Sources */,
 				A0DE49A81C4DE7DD006FD35A /* LmcItemsView.m in Sources */,
+				A3C1AF841D012A5B00FB58CE /* McLocalizableCtrl.m in Sources */,
 				A088DE761BFEB30A001DBDE3 /* SystemTool.m in Sources */,
 				A00734BF1C2A830D001FD675 /* BinButton.m in Sources */,
 				A0DE499B1C4DD21E006FD35A /* LmcIntroView.m in Sources */,
