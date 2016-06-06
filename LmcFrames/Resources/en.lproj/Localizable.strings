@@ -12,11 +12,12 @@
 
 //tabBar
 "msg" = "Message";
-"find" = "Find";
+"find" = "Search";
 "me" = "Me";
 //msg
 "3DTouch" = "3D Touch";
 "moveEvent" = "Move Event(Shake)";
+"searchController" = "SearchController";
 "chinese" = "Chinese";
 "english" = "English";
 "server" = "Server";

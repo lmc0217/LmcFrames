@@ -12,11 +12,12 @@
 
 //tabBar
 "msg" = "消息";
-"find" = "发现";
+"find" = "搜索";
 "me" = "我";
 //msg
 "3DTouch" = "3D Touch";
 "moveEvent" = "运行事件（摇一摇）";
+"searchController" = "搜索控制器";
 "chinese" = "中文";
 "english" = "英文";
 "server" = "服务条款";

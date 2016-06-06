@@ -82,6 +82,7 @@
 		A3A56DD71CD47DDD00CEE361 /* DDDTouchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A56DD61CD47DDD00CEE361 /* DDDTouchVC.m */; };
 		A3A56DDA1CD47E2300CEE361 /* DDDTouchPeekVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A56DD91CD47E2300CEE361 /* DDDTouchPeekVC.m */; };
 		A3C1AF841D012A5B00FB58CE /* McLocalizableCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = A3C1AF831D012A5B00FB58CE /* McLocalizableCtrl.m */; };
+		A3E0811B1D0567BD00E10DEE /* McSearchResultVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E081181D0567BD00E10DEE /* McSearchResultVC.m */; };
 		A3E0D7AB1CFD81E600D65008 /* ModuleOneVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E0D7A11CFD81E600D65008 /* ModuleOneVC.m */; };
 		A3E0D7AC1CFD81E600D65008 /* ModuleThreeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E0D7A41CFD81E600D65008 /* ModuleThreeVC.m */; };
 		A3E0D7AD1CFD81E600D65008 /* ModuleTwoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E0D7A71CFD81E600D65008 /* ModuleTwoVC.m */; };
@@ -227,6 +228,8 @@
 		A3A56DD91CD47E2300CEE361 /* DDDTouchPeekVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDDTouchPeekVC.m; sourceTree = "<group>"; };
 		A3C1AF821D012A5B00FB58CE /* McLocalizableCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = McLocalizableCtrl.h; sourceTree = "<group>"; };
 		A3C1AF831D012A5B00FB58CE /* McLocalizableCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = McLocalizableCtrl.m; sourceTree = "<group>"; };
+		A3E081171D0567BD00E10DEE /* McSearchResultVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = McSearchResultVC.h; sourceTree = "<group>"; };
+		A3E081181D0567BD00E10DEE /* McSearchResultVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = McSearchResultVC.m; sourceTree = "<group>"; };
 		A3E0D7A01CFD81E600D65008 /* ModuleOneVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleOneVC.h; sourceTree = "<group>"; };
 		A3E0D7A11CFD81E600D65008 /* ModuleOneVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModuleOneVC.m; sourceTree = "<group>"; };
 		A3E0D7A31CFD81E600D65008 /* ModuleThreeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleThreeVC.h; sourceTree = "<group>"; };
@@ -586,6 +589,15 @@
 			path = McLocalizableController;
 			sourceTree = "<group>";
 		};
+		A3E081161D0567BD00E10DEE /* SearchController */ = {
+			isa = PBXGroup;
+			children = (
+				A3E081171D0567BD00E10DEE /* McSearchResultVC.h */,
+				A3E081181D0567BD00E10DEE /* McSearchResultVC.m */,
+			);
+			path = SearchController;
+			sourceTree = "<group>";
+		};
 		A3E0D79E1CFD81E600D65008 /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
@@ -622,6 +634,7 @@
 			children = (
 				A3E0D7A61CFD81E600D65008 /* ModuleTwoVC.h */,
 				A3E0D7A71CFD81E600D65008 /* ModuleTwoVC.m */,
+				A3E081161D0567BD00E10DEE /* SearchController */,
 			);
 			path = ModuleTwo;
 			sourceTree = "<group>";
@@ -763,6 +776,7 @@
 				A395C88E1CEC3634009D04F4 /* AFImageDownloader.m in Sources */,
 				A0DE49AB1C4E284E006FD35A /* LmcBlokenLine.m in Sources */,
 				7353C76E1BF9D2E30033170E /* LmcAppDelegate.m in Sources */,
+				A3E0811B1D0567BD00E10DEE /* McSearchResultVC.m in Sources */,
 				A3E0D7AC1CFD81E600D65008 /* ModuleThreeVC.m in Sources */,
 				A395C8911CEC3634009D04F4 /* UIButton+AFNetworking.m in Sources */,
 				A395C88A1CEC3634009D04F4 /* AFURLSessionManager.m in Sources */,

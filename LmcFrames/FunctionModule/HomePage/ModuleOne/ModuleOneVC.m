@@ -153,17 +153,20 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if (indexPath.section == 0) {
         if (indexPath.row == 0) {
+            //3D Touch
             DDDTouchVC *dddTouchVC = [[DDDTouchVC alloc] init];
             dddTouchVC.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:dddTouchVC animated:YES];
             return;
         }
         if (indexPath.row == 1) {
+            //运动事件
             ShakeSwitchImgVC *shakeSwitchImgVC = [[ShakeSwitchImgVC alloc] init];
             shakeSwitchImgVC.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:shakeSwitchImgVC animated:YES];
             return;
         }
+
     }
     else if (indexPath.section == 1)
     {
