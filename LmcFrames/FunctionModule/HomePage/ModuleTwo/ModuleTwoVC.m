@@ -63,7 +63,6 @@
     
     
     McSearchResultVC *resultTVC = [[McSearchResultVC alloc] init];
-    resultTVC.hidesBottomBarWhenPushed = YES;
     UINavigationController *resultVC = [[UINavigationController alloc] initWithRootViewController:resultTVC];
     self.searchController = [[UISearchController alloc] initWithSearchResultsController:resultVC];
     self.searchController.searchResultsUpdater = self;
