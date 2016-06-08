@@ -73,6 +73,12 @@
     
     
     self.searchController.searchBar.frame = CGRectMake(self.searchController.searchBar.frame.origin.x,self.searchController.searchBar.frame.origin.y,self.searchController.searchBar.frame.size.width,44);
+    //样式
+    self.searchController.searchBar.tintColor = colorwithrgb(52, 222, 136, 1);
+    self.searchController.searchBar.backgroundColor = colorwithrgb(234, 234, 234, 1);
+    [self.searchController.searchBar setBackgroundImage:[[UIImage alloc] init]];
+    self.searchController.searchBar.placeholder = @"搜索";
+    
     self.mainTableView.tableHeaderView = self.searchController.searchBar;
     self.searchController.searchBar.delegate = self;
     
@@ -111,6 +117,20 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+
+#pragma mark - UISearchBarDelegate
+- (BOOL)searchBarShouldBeginEditing:(UISearchBar *)searchBar
+{
+    [searchBar setShowsCancelButton:YES];
+    for (UIView *view in [[searchBar.subviews lastObject] subviews]) {
+        if ([view isKindOfClass:[UIButton class]]) {
+            UIButton *cancelBtn = (UIButton *)view;
+            [cancelBtn setTitle:@"取消" forState:UIControlStateNormal];
+        }
+    }
+    return YES;
 }
 
 #pragma mark - UISearchResultsUpdating
