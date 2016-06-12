@@ -43,7 +43,7 @@
     //设置导航栏标题颜色
     [self.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName :[UIColor whiteColor]}];
     //设置代理为nil之后即便自定义了leftBarButtonItem也可以右滑pop。
-    
+    [self.navigationBar setTintColor:[UIColor whiteColor]];
     __weak McUINavigationController *weakSelf = self;
     if ([weakSelf respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
         //do somthing ...

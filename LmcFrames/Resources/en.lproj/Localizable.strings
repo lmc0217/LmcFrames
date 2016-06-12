@@ -20,7 +20,7 @@
 "searchController" = "SearchController";
 "chinese" = "Chinese";
 "english" = "English";
-"server" = "Server";
+"MultilevelCell" = "MultilevelCell";
 "aboutUS" = "About US";
 "contactUS" = "Contact US";
 "version" = "Version";

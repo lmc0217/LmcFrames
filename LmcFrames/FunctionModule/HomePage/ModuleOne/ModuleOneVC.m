@@ -9,6 +9,7 @@
 #import "ModuleOneVC.h"
 #import "DDDTouchVC.h"
 #import "ShakeSwitchImgVC.h"
+#import "MultilevelCellVC.h"
 
 @interface ModuleOneVC ()
 
@@ -39,7 +40,7 @@
     NSArray *arr2 = [NSArray arrayWithObjects:McLocalizedString(@"chinese", @""),McLocalizedString(@"english", @""), nil];
     [_arrData addObject:arr2];
     
-    NSArray *arr3 = [NSArray arrayWithObjects:McLocalizedString(@"server", @""),McLocalizedString(@"aboutUS", @""),McLocalizedString(@"contactUS", @""), nil];
+    NSArray *arr3 = [NSArray arrayWithObjects:McLocalizedString(@"MultilevelCell", @""),McLocalizedString(@"aboutUS", @""),McLocalizedString(@"contactUS", @""), nil];
     [_arrData addObject:arr3];
     
     NSArray *arr4 = [NSArray arrayWithObjects:McLocalizedString(@"version",@""), nil];
@@ -186,8 +187,10 @@
     else if (indexPath.section == 2)
     {
         if (indexPath.row == 0) {
-            //server provision
-            
+            //MultilevelCellVC
+            MultilevelCellVC *multilevelCellVC = [[MultilevelCellVC alloc] init];
+            multilevelCellVC.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:multilevelCellVC animated:YES];
             return;
         }
         if (indexPath.row == 1) {
