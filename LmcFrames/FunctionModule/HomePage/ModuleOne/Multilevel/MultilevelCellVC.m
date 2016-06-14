@@ -9,10 +9,11 @@
 #import "MultilevelCellVC.h"
 #import "McLeftImgBtn.h"
 
+#define BTNTAG 1000
 @interface MultilevelCellVC ()<UITableViewDataSource,UITableViewDelegate>
 
 @property(nonatomic, strong)UITableView *tableView;
-@property(nonatomic, strong)NSMutableArray *dataArray;//section标题
+@property(nonatomic, strong)NSMutableArray *dataArray;//数据源
 @property(nonatomic, strong)NSMutableArray *selectedArray;//是否被点击
 @end
 
@@ -70,7 +71,7 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    //判断section的标记是否为1,如果是说明为展开,就返回真实个数,如果不是就说明是缩回,返回0.
+    //如果是展开则1，否则0
     if ([_selectedArray[section] isEqualToString:@"1"]) {
         return [[[_dataArray[section] allValues] objectAtIndex:0] count];
     }
@@ -109,11 +110,21 @@
     sectionView.backgroundColor = [UIColor whiteColor];
     McLeftImgBtn *sectionButton = [[McLeftImgBtn alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(_tableView.frame), 39)];
     [sectionButton setTitle:[[[_dataArray objectAtIndex:section] allKeys] objectAtIndex:0] forState:UIControlStateNormal];
-    [sectionButton setImage:[UIImage imageNamed:@"msg_left_icon"] forState:UIControlStateNormal];
-    [sectionButton setImage:[UIImage imageNamed:@"msg_left_icon"] forState:UIControlStateHighlighted];
+    [sectionButton setImage:[UIImage imageNamed:@"rigth_tip_icon"] forState:UIControlStateNormal];
+    [sectionButton setImage:[UIImage imageNamed:@"down_tip_icon"] forState:UIControlStateSelected];
 //    [sectionButton setTitleColor:colorwithrgb(152, 152, 152, 1) forState:UIControlStateNormal];
     [sectionButton addTarget:self action:@selector(buttonAction:) forControlEvents:UIControlEventTouchUpInside];
-    sectionButton.tag = 1000 + section;
+    sectionButton.tag = BTNTAG + section;
+    if ([_selectedArray[section] isEqualToString:@"0"])
+    {
+        //展开
+        sectionButton.selected = NO;
+    }
+    else
+    {
+        //收回
+        sectionButton.selected = YES;
+    }
     [sectionView addSubview:sectionButton];
     
     //分割线
@@ -133,17 +144,19 @@
 #pragma mark button点击方法
 -(void)buttonAction:(UIButton *)button
 {
-    if ([_selectedArray[button.tag - 1000] isEqualToString:@"0"]) {
+    if ([_selectedArray[button.tag - BTNTAG] isEqualToString:@"0"]) {
 
-        //如果当前点击的section是缩回的,那么点击后就需要把它展开,是_selectedArray对应的值为1,这样当前section返回cell的个数就变为真实个数,然后刷新这个section就行了
-        [_selectedArray replaceObjectAtIndex:button.tag - 1000 withObject:@"1"];
-        [_tableView reloadSections:[NSIndexSet indexSetWithIndex:button.tag - 1000] withRowAnimation:UITableViewRowAnimationFade];
+        //展开
+        button.selected = YES;
+        [_selectedArray replaceObjectAtIndex:button.tag - BTNTAG withObject:@"1"];
+        [_tableView reloadSections:[NSIndexSet indexSetWithIndex:button.tag - BTNTAG] withRowAnimation:UITableViewRowAnimationFade];
     }
     else
     {
-        //如果当前点击的section是展开的,那么点击后就需要把它缩回,使_selectedArray对应的值为0,这样当前section返回cell的个数变成0,然后刷新这个section就行了
-        [_selectedArray replaceObjectAtIndex:button.tag - 1000 withObject:@"0"];
-        [_tableView reloadSections:[NSIndexSet indexSetWithIndex:button.tag - 1000] withRowAnimation:UITableViewRowAnimationFade];
+        //收回
+        button.selected = NO;
+        [_selectedArray replaceObjectAtIndex:button.tag - BTNTAG withObject:@"0"];
+        [_tableView reloadSections:[NSIndexSet indexSetWithIndex:button.tag - BTNTAG] withRowAnimation:UITableViewRowAnimationFade];
     }
 }
 

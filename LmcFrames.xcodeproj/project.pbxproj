@@ -50,6 +50,10 @@
 		A30D84551CE1DE9D00280F90 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A30D84521CE1DE9D00280F90 /* MBProgressHUD.bundle */; };
 		A30D84561CE1DE9D00280F90 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A30D84541CE1DE9D00280F90 /* MBProgressHUD.m */; };
 		A30D845A1CE1DF6700280F90 /* MBProgressHUD+MC.m in Sources */ = {isa = PBXBuildFile; fileRef = A30D84591CE1DF6700280F90 /* MBProgressHUD+MC.m */; };
+		A342AA271D0F9E3700C8EC52 /* down_tip_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A342AA251D0F9E3700C8EC52 /* down_tip_icon@2x.png */; };
+		A342AA281D0F9E3700C8EC52 /* rigth_tip_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A342AA261D0F9E3700C8EC52 /* rigth_tip_icon@2x.png */; };
+		A342AA2B1D0F9E4000C8EC52 /* down_tip_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A342AA291D0F9E4000C8EC52 /* down_tip_icon@3x.png */; };
+		A342AA2C1D0F9E4000C8EC52 /* rigth_tip_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A342AA2A1D0F9E4000C8EC52 /* rigth_tip_icon@3x.png */; };
 		A34668F31CFD74F30019D3AA /* NSDictionary+safe.m in Sources */ = {isa = PBXBuildFile; fileRef = A34668EA1CFD74F30019D3AA /* NSDictionary+safe.m */; };
 		A34668F41CFD74F30019D3AA /* NSString+McMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = A34668EC1CFD74F30019D3AA /* NSString+McMD5.m */; };
 		A34668F51CFD74F30019D3AA /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = A34668EE1CFD74F30019D3AA /* UIColor+Hex.m */; };
@@ -171,6 +175,10 @@
 		A30D84541CE1DE9D00280F90 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		A30D84581CE1DF6700280F90 /* MBProgressHUD+MC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MC.h"; sourceTree = "<group>"; };
 		A30D84591CE1DF6700280F90 /* MBProgressHUD+MC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MC.m"; sourceTree = "<group>"; };
+		A342AA251D0F9E3700C8EC52 /* down_tip_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down_tip_icon@2x.png"; sourceTree = "<group>"; };
+		A342AA261D0F9E3700C8EC52 /* rigth_tip_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rigth_tip_icon@2x.png"; sourceTree = "<group>"; };
+		A342AA291D0F9E4000C8EC52 /* down_tip_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down_tip_icon@3x.png"; sourceTree = "<group>"; };
+		A342AA2A1D0F9E4000C8EC52 /* rigth_tip_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rigth_tip_icon@3x.png"; sourceTree = "<group>"; };
 		A34668E91CFD74F30019D3AA /* NSDictionary+safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+safe.h"; sourceTree = "<group>"; };
 		A34668EA1CFD74F30019D3AA /* NSDictionary+safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+safe.m"; sourceTree = "<group>"; };
 		A34668EB1CFD74F30019D3AA /* NSString+McMD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+McMD5.h"; sourceTree = "<group>"; };
@@ -622,6 +630,8 @@
 		A39FFB161D0D1FBF00B00D08 /* 2x */ = {
 			isa = PBXGroup;
 			children = (
+				A342AA251D0F9E3700C8EC52 /* down_tip_icon@2x.png */,
+				A342AA261D0F9E3700C8EC52 /* rigth_tip_icon@2x.png */,
 				A39FFB171D0D1FBF00B00D08 /* msg_left_icon@2x.png */,
 			);
 			path = 2x;
@@ -630,6 +640,8 @@
 		A39FFB181D0D1FBF00B00D08 /* 3x */ = {
 			isa = PBXGroup;
 			children = (
+				A342AA291D0F9E4000C8EC52 /* down_tip_icon@3x.png */,
+				A342AA2A1D0F9E4000C8EC52 /* rigth_tip_icon@3x.png */,
 				A39FFB191D0D1FBF00B00D08 /* msg_left_icon@3x.png */,
 			);
 			path = 3x;
@@ -783,6 +795,7 @@
 			files = (
 				A0EFE7E51C91441C0025D7A1 /* shareIcon@2x.png in Resources */,
 				A346690F1CFD76A70019D3AA /* msg_n@2x.png in Resources */,
+				A342AA271D0F9E3700C8EC52 /* down_tip_icon@2x.png in Resources */,
 				A00734C81C2A88B7001FD675 /* noSelect.jpg in Resources */,
 				A0EFE7E61C91441C0025D7A1 /* shareIcon@3x.png in Resources */,
 				7353C7741BF9D2E30033170E /* Main.storyboard in Resources */,
@@ -792,16 +805,19 @@
 				A346690D1CFD76A70019D3AA /* me_n@2x.png in Resources */,
 				7353C7791BF9D2E30033170E /* LaunchScreen.xib in Resources */,
 				A06A856C1C43B27700DE4696 /* Localizable.strings in Resources */,
+				A342AA281D0F9E3700C8EC52 /* rigth_tip_icon@2x.png in Resources */,
 				A39FFB1B1D0D1FBF00B00D08 /* msg_left_icon@3x.png in Resources */,
 				A0C177B21C04386500C7F5C5 /* icon1.png in Resources */,
 				A00734C91C2A88B7001FD675 /* select.jpg in Resources */,
 				A346690E1CFD76A70019D3AA /* me_s@2x.png in Resources */,
 				A34669101CFD76A70019D3AA /* msg_s@2x.png in Resources */,
 				A39FFB1A1D0D1FBF00B00D08 /* msg_left_icon@2x.png in Resources */,
+				A342AA2C1D0F9E4000C8EC52 /* rigth_tip_icon@3x.png in Resources */,
 				A08936931C28F7BE00852F88 /* Default-568h@2x.png in Resources */,
 				A08936951C28F7BE00852F88 /* Default@2x.png in Resources */,
 				A346690C1CFD76A70019D3AA /* find_n@2x.png in Resources */,
 				7353C7761BF9D2E30033170E /* Images.xcassets in Resources */,
+				A342AA2B1D0F9E4000C8EC52 /* down_tip_icon@3x.png in Resources */,
 				A30D84551CE1DE9D00280F90 /* MBProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

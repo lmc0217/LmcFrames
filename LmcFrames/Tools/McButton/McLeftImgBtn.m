@@ -24,9 +24,9 @@
 #pragma mark -改变按钮默认图片位置
 - (CGRect)imageRectForContentRect:(CGRect)contentRect
 {
-    CGFloat h = 20;
-    CGFloat w = 20;
-    CGFloat x = 0;
+    CGFloat h = 15;
+    CGFloat w = 15;
+    CGFloat x = 5;
     CGFloat y = (self.frame.size.height - h) * 0.5;
     return CGRectMake(x, y, w, h);
 }
