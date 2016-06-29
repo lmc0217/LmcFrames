@@ -15,7 +15,7 @@
 @property (nonatomic, copy) NSString * passwd;//密码
 @property (nonatomic, copy) NSString * userName;//用户名
 @property (nonatomic, copy) NSString * userID;//用户ID
-@property (nonatomic, copy) NSString * companyID;
+@property (nonatomic, copy) NSString * companyID;//公司名
 
 
 
