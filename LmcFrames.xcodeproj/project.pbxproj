@@ -47,6 +47,7 @@
 		A0DE49AB1C4E284E006FD35A /* LmcBlokenLine.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DE49AA1C4E284E006FD35A /* LmcBlokenLine.m */; };
 		A0EFE7E51C91441C0025D7A1 /* shareIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A0EFE7E31C91441C0025D7A1 /* shareIcon@2x.png */; };
 		A0EFE7E61C91441C0025D7A1 /* shareIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A0EFE7E41C91441C0025D7A1 /* shareIcon@3x.png */; };
+		A30C62231D9E3D3C00615F43 /* Arrow.m in Sources */ = {isa = PBXBuildFile; fileRef = A30C62221D9E3D3C00615F43 /* Arrow.m */; };
 		A30D84551CE1DE9D00280F90 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A30D84521CE1DE9D00280F90 /* MBProgressHUD.bundle */; };
 		A30D84561CE1DE9D00280F90 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A30D84541CE1DE9D00280F90 /* MBProgressHUD.m */; };
 		A30D845A1CE1DF6700280F90 /* MBProgressHUD+MC.m in Sources */ = {isa = PBXBuildFile; fileRef = A30D84591CE1DF6700280F90 /* MBProgressHUD+MC.m */; };
@@ -170,6 +171,8 @@
 		A0EFE7E31C91441C0025D7A1 /* shareIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shareIcon@2x.png"; sourceTree = "<group>"; };
 		A0EFE7E41C91441C0025D7A1 /* shareIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shareIcon@3x.png"; sourceTree = "<group>"; };
 		A0F5C0AA1C4F30190072FF9B /* lmcFrames.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lmcFrames.pch; sourceTree = "<group>"; };
+		A30C62211D9E3D3B00615F43 /* Arrow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Arrow.h; sourceTree = "<group>"; };
+		A30C62221D9E3D3C00615F43 /* Arrow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Arrow.m; sourceTree = "<group>"; };
 		A30D84521CE1DE9D00280F90 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
 		A30D84531CE1DE9D00280F90 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		A30D84541CE1DE9D00280F90 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
@@ -721,6 +724,8 @@
 			children = (
 				A3E0D7B01CFD83FF00D65008 /* ShakeSwitchImageView.h */,
 				A3E0D7B11CFD83FF00D65008 /* ShakeSwitchImageView.m */,
+				A30C62211D9E3D3B00615F43 /* Arrow.h */,
+				A30C62221D9E3D3C00615F43 /* Arrow.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -854,6 +859,7 @@
 				A3E0811B1D0567BD00E10DEE /* McSearchResultVC.m in Sources */,
 				A3E0D7AC1CFD81E600D65008 /* ModuleThreeVC.m in Sources */,
 				A395C8911CEC3634009D04F4 /* UIButton+AFNetworking.m in Sources */,
+				A30C62231D9E3D3C00615F43 /* Arrow.m in Sources */,
 				A395C88A1CEC3634009D04F4 /* AFURLSessionManager.m in Sources */,
 				A395C88C1CEC3634009D04F4 /* Reachability.m in Sources */,
 				A395C8851CEC3634009D04F4 /* AFHTTPSessionManager.m in Sources */,

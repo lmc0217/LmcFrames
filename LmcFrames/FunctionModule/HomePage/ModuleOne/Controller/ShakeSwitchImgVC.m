@@ -8,10 +8,12 @@
 
 #import "ShakeSwitchImgVC.h"
 #import "ShakeSwitchImageView.h"
+#import "Arrow.h"
 
 @interface ShakeSwitchImgVC ()
 {
     ShakeSwitchImageView *_imageView;
+    Arrow *_arrow;
 }
 @end
 
@@ -27,6 +29,10 @@
     _imageView.layer.masksToBounds = YES;
     _imageView.userInteractionEnabled=true;
     [self.view addSubview:_imageView];
+    
+    _arrow=[[Arrow alloc] initWithFrame:CGRectMake(CGRectGetMinX(_imageView.frame), CGRectGetMaxY(_imageView.frame)+5, 100, 50)];
+    _arrow.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:_arrow];
 }
 
 - (void)didReceiveMemoryWarning {
