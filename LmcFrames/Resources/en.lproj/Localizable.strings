@@ -21,6 +21,6 @@
 "chinese" = "Chinese";
 "english" = "English";
 "MultilevelCell" = "MultilevelCell";
-"aboutUS" = "About US";
+"RefreshControl" = "UIRefreshControl";
 "contactUS" = "Contact US";
 "version" = "Version";

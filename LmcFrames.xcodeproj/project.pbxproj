@@ -90,6 +90,7 @@
 		A3A56DD41CD47D3100CEE361 /* McBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A56DD31CD47D3100CEE361 /* McBaseViewController.m */; };
 		A3A56DD71CD47DDD00CEE361 /* DDDTouchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A56DD61CD47DDD00CEE361 /* DDDTouchVC.m */; };
 		A3A56DDA1CD47E2300CEE361 /* DDDTouchPeekVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A56DD91CD47E2300CEE361 /* DDDTouchPeekVC.m */; };
+		A3BCC0B91DC1DFA0008AF28A /* ScrollRefreshControlVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A3BCC0B81DC1DFA0008AF28A /* ScrollRefreshControlVC.m */; };
 		A3C1AF841D012A5B00FB58CE /* McLocalizableCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = A3C1AF831D012A5B00FB58CE /* McLocalizableCtrl.m */; };
 		A3E0811B1D0567BD00E10DEE /* McSearchResultVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E081181D0567BD00E10DEE /* McSearchResultVC.m */; };
 		A3E0D7AB1CFD81E600D65008 /* ModuleOneVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E0D7A11CFD81E600D65008 /* ModuleOneVC.m */; };
@@ -247,6 +248,8 @@
 		A3A56DD61CD47DDD00CEE361 /* DDDTouchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDDTouchVC.m; sourceTree = "<group>"; };
 		A3A56DD81CD47E2300CEE361 /* DDDTouchPeekVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDDTouchPeekVC.h; sourceTree = "<group>"; };
 		A3A56DD91CD47E2300CEE361 /* DDDTouchPeekVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDDTouchPeekVC.m; sourceTree = "<group>"; };
+		A3BCC0B71DC1DFA0008AF28A /* ScrollRefreshControlVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollRefreshControlVC.h; sourceTree = "<group>"; };
+		A3BCC0B81DC1DFA0008AF28A /* ScrollRefreshControlVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollRefreshControlVC.m; sourceTree = "<group>"; };
 		A3C1AF821D012A5B00FB58CE /* McLocalizableCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = McLocalizableCtrl.h; sourceTree = "<group>"; };
 		A3C1AF831D012A5B00FB58CE /* McLocalizableCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = McLocalizableCtrl.m; sourceTree = "<group>"; };
 		A3E081171D0567BD00E10DEE /* McSearchResultVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = McSearchResultVC.h; sourceTree = "<group>"; };
@@ -650,6 +653,15 @@
 			path = 3x;
 			sourceTree = "<group>";
 		};
+		A3BCC0B61DC1DF10008AF28A /* RefreshControl */ = {
+			isa = PBXGroup;
+			children = (
+				A3BCC0B71DC1DFA0008AF28A /* ScrollRefreshControlVC.h */,
+				A3BCC0B81DC1DFA0008AF28A /* ScrollRefreshControlVC.m */,
+			);
+			name = RefreshControl;
+			sourceTree = "<group>";
+		};
 		A3C1AF811D012A0700FB58CE /* McLocalizableController */ = {
 			isa = PBXGroup;
 			children = (
@@ -684,6 +696,7 @@
 			children = (
 				A3E0D7A01CFD81E600D65008 /* ModuleOneVC.h */,
 				A3E0D7A11CFD81E600D65008 /* ModuleOneVC.m */,
+				A3BCC0B61DC1DF10008AF28A /* RefreshControl */,
 				A39FFB0D1D0CFD9200B00D08 /* Multilevel */,
 				A3E0D7B31CFD86E200D65008 /* Controller */,
 				A3E0D7AF1CFD834700D65008 /* View */,
@@ -853,6 +866,7 @@
 				A00310F31C7174E50060DE8D /* MCPayAlertView.m in Sources */,
 				A39FFB101D0CFDB000B00D08 /* MultilevelCellVC.m in Sources */,
 				A00734C11C2A830D001FD675 /* BinRadioButton.m in Sources */,
+				A3BCC0B91DC1DFA0008AF28A /* ScrollRefreshControlVC.m in Sources */,
 				A395C88E1CEC3634009D04F4 /* AFImageDownloader.m in Sources */,
 				A0DE49AB1C4E284E006FD35A /* LmcBlokenLine.m in Sources */,
 				7353C76E1BF9D2E30033170E /* LmcAppDelegate.m in Sources */,
