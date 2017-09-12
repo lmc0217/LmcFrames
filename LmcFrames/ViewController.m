@@ -19,6 +19,7 @@
 #import "McUINavigationController.h"
 #import "Reachability.h"
 #import "McNetworking.h"
+#import "CircularProgressView.h"
 @interface ViewController ()<ClickedListViewDelegate>
 
 @end
@@ -64,8 +65,11 @@
     }];
     
     [[AFNetworkReachabilityManager sharedManager] startMonitoring];
+    CircularProgressView *progressView = [[CircularProgressView alloc] initWithFrame:CGRectMake(20, 100, 150, 150)];
+    progressView.progress = 0.0;
+    [self.view addSubview:progressView];
     
-#if 1
+#if 0
     NSDictionary *dic1 = [NSDictionary dictionaryWithObject:@"icon1" forKey:@"扫一扫"];
     NSDictionary *dic2 = [NSDictionary dictionaryWithObject:@"icon1" forKey:@"加好友"];
     NSDictionary *dic3 = [NSDictionary dictionaryWithObject:@"icon1" forKey:@"创建讨论组"];
