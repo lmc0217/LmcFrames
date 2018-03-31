@@ -17,6 +17,7 @@
 //msg
 "3DTouch" = "3D Touch";
 "moveEvent" = "Move Event(Shake)";
+"introView" = "McIntroView";
 "searchController" = "SearchController";
 "chinese" = "Chinese";
 "english" = "English";

@@ -17,6 +17,7 @@
 //msg
 "3DTouch" = "3D Touch";
 "moveEvent" = "运行事件（摇一摇）";
+"introView" = "引导页";
 "searchController" = "搜索控制器";
 "chinese" = "中文";
 "english" = "英文";

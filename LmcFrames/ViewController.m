@@ -67,6 +67,7 @@
     [[AFNetworkReachabilityManager sharedManager] startMonitoring];
     CircularProgressView *progressView = [[CircularProgressView alloc] initWithFrame:CGRectMake(20, 100, 150, 150)];
     progressView.progress = 0.0;
+    progressView.bgAphla = 0.7;
     [self.view addSubview:progressView];
     
 #if 0

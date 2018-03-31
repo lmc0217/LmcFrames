@@ -28,6 +28,13 @@
     _progress = progress;
     [self setNeedsDisplay];
 }
+- (void)setBgAphla:(float)bgAphla {
+    if (bgAphla >= 1.0f) {
+        _bgAphla = 1.0;
+    }
+    _bgAphla = bgAphla;
+    [self setNeedsDisplay];
+}
 
 - (void)drawRect:(CGRect)rect {
     [self drawBackground];
@@ -44,8 +51,8 @@
     CGFloat radius = MIN(CGRectGetHeight(rect), CGRectGetWidth(rect)) / 2 - Space - LineWidth;
     // draw pie
     UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:center radius:radius startAngle:0 endAngle:M_PI * 2 clockwise:YES];
-    [[UIColor blueColor] setFill];
-    [path fillWithBlendMode:kCGBlendModeNormal alpha:0.0];
+    [[UIColor whiteColor] setFill];
+    [path fillWithBlendMode:kCGBlendModeNormal alpha:_bgAphla];
 //    [path fill];
     //line width
     [path setLineWidth:2];

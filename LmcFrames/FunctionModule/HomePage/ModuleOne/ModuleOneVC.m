@@ -11,6 +11,7 @@
 #import "ShakeSwitchImgVC.h"
 #import "MultilevelCellVC.h"
 #import "ScrollRefreshControlVC.h"
+#import "McIntroViewVC.h"
 
 @interface ModuleOneVC ()
 
@@ -35,7 +36,7 @@
 {
    
     _arrData = [NSMutableArray array];
-    NSArray *arr1 = [NSArray arrayWithObjects:McLocalizedString(@"3DTouch", @""), McLocalizedString(@"moveEvent", @""),nil];
+    NSArray *arr1 = [NSArray arrayWithObjects:McLocalizedString(@"3DTouch", @""), McLocalizedString(@"moveEvent", @""), McLocalizedString(@"introView", @""), nil];
     [_arrData addObject:arr1];
     
     NSArray *arr2 = [NSArray arrayWithObjects:McLocalizedString(@"chinese", @""),McLocalizedString(@"english", @""), nil];
@@ -168,7 +169,13 @@
             [self.navigationController pushViewController:shakeSwitchImgVC animated:YES];
             return;
         }
-
+        if (indexPath.row == 2) {
+            //引导页
+            McIntroViewVC *introViewVC = [[McIntroViewVC alloc] init];
+            introViewVC.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:introViewVC animated:YES];
+            return;
+        }
     }
     else if (indexPath.section == 1)
     {

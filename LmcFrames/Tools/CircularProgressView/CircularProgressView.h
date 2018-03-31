@@ -11,4 +11,6 @@
 @interface CircularProgressView : UIView
 /// 0 ~ 100
 @property (nonatomic) float progress;
+// 0.0 ~ 1.0
+@property (nonatomic) float bgAphla;
 @end
